@@ -80,9 +80,14 @@ class Crawler:
                     if response.metadata().get("access_issue") == "website_challenge":
                         raise FetchError("robots_website_challenge")
                     parser = RobotFileParser()
-                    if response.status in {404, 410}:
+                    # RFC 9309 §2.3.1.3 permits access for unavailable robots
+                    # files (4xx). Some asset CDNs use 400 for unsupported paths.
+                    # Keep other errors, including 401/403/429, fail-closed.
+                    if response.status in {400, 404, 410}:
                         parser.parse([])
                         parser.allow_all = True
+                        if response.status == 400:
+                            self.warn(f"robots_no_rules_http_400:{host_origin}")
                     elif 200 <= response.status < 300:
                         if response.body.lstrip().lower().startswith((b"<!doctype html", b"<html")):
                             self.warn(f"robots_returned_html:{host_origin}")

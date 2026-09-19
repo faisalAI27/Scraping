@@ -3,10 +3,12 @@
 import hashlib
 import json
 import os
+from pathlib import Path
+from urllib.parse import urlsplit
 
 import streamlit as st
 
-from siteprep.config import Config
+from siteprep.config import Config, site_profile
 from siteprep.export import markdown, report, zip_job
 from siteprep.jobs import JobService
 
@@ -23,35 +25,87 @@ def main():
     st.caption("Collect public website information. Inspect the evidence. Export source-linked documents.")
     with st.sidebar:
         st.header("New collection")
+        url = st.text_input("Website URL", placeholder="https://example.com", key="new_website_url")
+        profile = site_profile(url, Path(__file__).resolve().parents[1])
+        defaults = profile or Config()
+        if profile:
+            st.info("Saved settings loaded for this website. You can adjust them below.")
+            st.caption(
+                f"Browser hosts: {', '.join(profile.browser_resource_domains) or 'website only'} · "
+                f"Render timeout: {profile.timeout_seconds:g}s · Resource limit: {profile.max_resources}"
+            )
+        try:
+            settings_host = urlsplit(url).hostname or "default"
+        except ValueError:
+            settings_host = "default"
+
+        def field_key(name):
+            return f"new-{settings_host}-{name}"
+
         with st.form("new_job"):
-            url = st.text_input("Website URL", placeholder="https://example.com")
             with st.expander("Scope and resource limits"):
                 domains = st.text_input(
                     "Allowed domains",
+                    value=", ".join(defaults.allowed_domains),
+                    key=field_key("domains"),
                     help="Comma-separated exact hostnames. Blank uses the website hostname.",
                 )
-                paths = st.text_input("Allowed paths", value="/", help="Comma-separated path prefixes.")
+                paths = st.text_input(
+                    "Allowed paths",
+                    value=", ".join(defaults.allowed_paths),
+                    key=field_key("paths"),
+                    help="Comma-separated path prefixes.",
+                )
                 document_domains = st.text_input(
-                    "External document hosts", help="Explicitly allow public PDF/DOCX hosts."
+                    "External document hosts",
+                    value=", ".join(defaults.external_document_domains),
+                    key=field_key("documents"),
+                    help="Explicitly allow public PDF/DOCX hosts.",
                 )
                 browser_domains = st.text_input(
                     "Browser resource hosts",
+                    value=", ".join(defaults.browser_resource_domains),
+                    key=field_key("browser"),
                     help="Comma-separated exact hosts for JavaScript or public API dependencies, such as cdn.jsdelivr.net.",
                 )
-                resources = st.number_input("Maximum resources", min_value=1, max_value=10000, value=50)
-                depth = st.number_input("Maximum link depth", min_value=0, max_value=30, value=3)
-                duration = st.number_input(
-                    "Maximum duration (seconds)", min_value=10, max_value=86400, value=300
+                resources = st.number_input(
+                    "Maximum resources",
+                    min_value=1,
+                    max_value=10000,
+                    value=defaults.max_resources,
+                    key=field_key("resources"),
                 )
-                render = st.selectbox("JavaScript rendering", ["auto", "always", "never"])
+                depth = st.number_input(
+                    "Maximum link depth",
+                    min_value=0,
+                    max_value=30,
+                    value=defaults.max_depth,
+                    key=field_key("depth"),
+                )
+                duration = st.number_input(
+                    "Maximum duration (seconds)",
+                    min_value=1.0,
+                    max_value=86400.0,
+                    value=float(defaults.max_duration_seconds),
+                    key=field_key("duration"),
+                )
+                render = st.selectbox(
+                    "JavaScript rendering",
+                    ["auto", "always", "never"],
+                    index=["auto", "always", "never"].index(defaults.render),
+                    key=field_key("render"),
+                )
                 timeout = st.number_input(
                     "Request / render timeout (seconds)",
-                    min_value=1,
-                    max_value=120,
-                    value=20,
+                    min_value=0.1,
+                    max_value=120.0,
+                    value=float(defaults.timeout_seconds),
+                    key=field_key("timeout"),
                     help="JavaScript pages with many dependencies may need a longer render timeout.",
                 )
-                ocr = st.checkbox("Read informative images with local OCR", value=True)
+                ocr = st.checkbox(
+                    "Read informative images with local OCR", value=defaults.ocr_enabled, key=field_key("ocr")
+                )
             st.caption("Limits control local resource use. They do not measure information completeness.")
             submitted = st.form_submit_button("Start collection", type="primary", width="stretch")
         if submitted:
@@ -60,7 +114,7 @@ def main():
                 def split(value):
                     return [v.strip() for v in value.split(",") if v.strip()]
 
-                config = Config(
+                overrides = dict(
                     allowed_domains=split(domains),
                     allowed_paths=split(paths),
                     external_document_domains=split(document_domains),
@@ -72,6 +126,7 @@ def main():
                     timeout_seconds=timeout,
                     ocr_enabled=ocr,
                 )
+                config = Config.model_validate({**defaults.model_dump(), **overrides})
                 with st.spinner("Checking destination…"):
                     job_id = service.create(url, config)
                     service.start(job_id)

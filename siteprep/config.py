@@ -1,6 +1,7 @@
 import re
 from pathlib import Path
 from typing import Literal
+from urllib.parse import urlsplit
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, field_validator
@@ -96,3 +97,22 @@ class FixtureAccess(BaseModel):
     """Test harness capability; deliberately unavailable in public YAML/CLI/UI."""
 
     origin: str
+
+
+def site_profile(url, directory):
+    """Match local profiles by exact seed hostname; never infer CDN permissions."""
+    try:
+        hostname = urlsplit(url).hostname
+    except ValueError:
+        return None
+    if not hostname:
+        return None
+    hostname = hostname.lower().encode("idna").decode()
+    for path in sorted(Path(directory).glob("config.*.yaml")):
+        try:
+            config = Config.load(path)
+        except (ValueError, OSError, yaml.YAMLError):
+            continue
+        if hostname in config.allowed_domains:
+            return config
+    return None

@@ -54,6 +54,33 @@ def test_empty_review_screen_explains_starting_collection(tmp_path, monkeypatch)
     assert any("Start a collection" in info.value for info in app.info)
 
 
+def test_site_profile_loads_when_url_changes_and_is_used_for_collection(tmp_path, monkeypatch):
+    monkeypatch.setenv("SITEPREP_DATA_DIR", str(tmp_path))
+    monkeypatch.setattr(JobService, "create", lambda self, url, config: self.store.create(url, config))
+    monkeypatch.setattr(JobService, "start", lambda *a: None)
+    app = AppTest.from_file(str(Path(__file__).parents[1] / "siteprep" / "ui.py")).run(timeout=15)
+    app.text_input(key="new_website_url").set_value("https://kpawaz.kpitb.online/").run()
+    assert not app.exception
+    assert any("Saved settings loaded" in item.value for item in app.info)
+    assert next(w.value for w in app.text_input if w.label == "Browser resource hosts") == "cdn.jsdelivr.net"
+    assert next(w.value for w in app.number_input if w.label == "Maximum resources") == 50
+    assert next(w.value for w in app.number_input if w.label == "Request / render timeout (seconds)") == 90
+    # Advanced controls remain editable; starting must use the displayed values.
+    next(w for w in app.number_input if w.label == "Maximum resources").set_value(40)
+    next(b for b in app.button if b.label == "Start collection").click().run()
+    assert not app.exception
+    service = JobService(tmp_path)
+    config = Config.model_validate_json(service.store.jobs()[0]["config"])
+    assert config.browser_resource_domains == ["cdn.jsdelivr.net"]
+    assert config.timeout_seconds == 90
+    assert config.max_resources == 40
+    # Another website must not inherit this site's CDN permission or timeout.
+    app.text_input(key="new_website_url").set_value("https://example.com/").run()
+    assert not app.exception
+    assert next(w.value for w in app.text_input if w.label == "Browser resource hosts") == ""
+    assert next(w.value for w in app.number_input if w.label == "Request / render timeout (seconds)") == 20
+
+
 def test_blocked_site_explains_failure_and_exposes_saved_response(tmp_path, monkeypatch):
     # Old jobs did not have classified metadata; diagnosis must work from saved bytes.
     service = JobService(tmp_path)

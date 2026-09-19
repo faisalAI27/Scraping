@@ -86,6 +86,22 @@ Authentication, CAPTCHA solving, forms and access-control bypass are out of scop
 Malformed sitemaps, including sites returning their HTML homepage at `/sitemap.xml`,
 produce discovery warnings and do not prevent the seed page from being collected.
 
+For KP AWAZ, use the supplied [configuration](config.kpawaz.yaml):
+
+```sh
+uv run python -m siteprep crawl https://kpawaz.kpitb.online/ --config config.kpawaz.yaml
+```
+
+In the UI, entering the KP AWAZ URL automatically loads these saved settings:
+**Browser resource hosts** `cdn.jsdelivr.net`, **Request / render timeout** `90`
+seconds, and **Maximum resources** `50`. A notice confirms the settings were loaded;
+you can still edit them under **Scope and resource limits** before starting.
+The UI matches local `config.*.yaml` profiles by exact `allowed_domains` hostname.
+Unrelated websites use the normal defaults and do not inherit CDN permissions.
+This permits the public JavaScript modules used to assemble its pages. The CDN's
+HTTP 400 response at `/robots.txt` is treated as an unavailable rules file and
+recorded as a warning; other crawl and destination restrictions still apply.
+
 ## Outputs
 
 Each job is isolated under `.siteprep/JOB_ID/`:

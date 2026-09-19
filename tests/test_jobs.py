@@ -29,3 +29,17 @@ def test_invalid_regex_and_css_selectors_are_configuration_errors():
         Config(excluded_patterns=["["])
     with pytest.raises(ValidationError, match="Invalid removal selector"):
         Config(remove_selectors=["???"])
+
+
+def test_site_profiles_require_exact_host_and_ignore_unscoped_defaults(tmp_path):
+    from siteprep.config import site_profile
+
+    (tmp_path / "config.example.yaml").write_text("browser_resource_domains: [wrong.example]\n")
+    (tmp_path / "config.site.yaml").write_text(
+        "allowed_domains: [site.example]\nbrowser_resource_domains: [cdn.example]\ntimeout_seconds: 90\n"
+    )
+    assert site_profile("https://site.example/path", tmp_path).browser_resource_domains == ["cdn.example"]
+    assert site_profile("https://sub.site.example/", tmp_path) is None
+    assert site_profile("https://site.example.evil.test/", tmp_path) is None
+    assert site_profile("https://other.example/", tmp_path) is None
+    assert site_profile("https://[", tmp_path) is None

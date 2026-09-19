@@ -17,8 +17,11 @@
   are retained. Other encodings and concatenated compressed streams are explicitly
   unsupported. TLS remains verified; environment proxies are deliberately ignored.
 * Only the first validated DNS address is tried per request. Network conditions and
-  restrictive robots policies can prevent collection. Robots 404/410 are permissive;
-  other unavailable/error responses deny that host. Standard `urllib.robotparser`
+  restrictive robots policies can prevent collection. Robots 400/404/410 are treated
+  as unavailable files, allowing access under [RFC 9309 §2.3.1.3](https://www.rfc-editor.org/rfc/rfc9309.html#section-2.3.1.3).
+  HTTP 400 is recorded as a warning. Other error responses (including 401/403/429
+  and 5xx), network failures, and recognized challenge pages deny that host.
+  Explicit robots rules are still followed. Standard `urllib.robotparser`
   semantics may differ from extensions implemented by large search engines.
 * DOM rules are conservative. Useful hidden FAQ/tab text is retained, which can
   also retain inactive labels. Websites with unusual markup may include menu or

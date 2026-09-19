@@ -1,0 +1,9 @@
+# Public KP AWAZ pages assemble their content through JavaScript modules.
+# This adds the observed CDN only for browser dependencies, not crawl discovery.
+allowed_domains: [kpawaz.kpitb.online]
+browser_resource_domains: [cdn.jsdelivr.net]
+render: auto
+timeout_seconds: 90
+max_resources: 50
+max_duration_seconds: 300
+per_host_delay: 1.0
