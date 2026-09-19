@@ -75,6 +75,7 @@ class JobService:
     async def _reprocess(self, job_id, config=None):
         from .extract import detect_type, extract_isolated
         from .quality import make_record
+        from .diagnostics import access_issue
 
         job = self.store.job(job_id)
         config = config or Config.model_validate_json(job["config"])
@@ -92,6 +93,8 @@ class JobService:
             # Rendered output wins over the original HTTP shell.
             source = next((s for s in reversed(candidates) if s["fetch_method"] == "browser"), candidates[-1])
             body = (self.store.job_dir(job_id) / source["path"]).read_bytes()
+            if access_issue(source["http_status"], body, source.get("headers")) == "website_challenge":
+                continue
             source["detected_content_type"] = detect_type(body, source["headers"].get("content-type", ""))
             try:
                 result = await extract_isolated(body, source["detected_content_type"], config, lambda: None)

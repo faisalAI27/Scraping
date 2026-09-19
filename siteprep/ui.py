@@ -34,12 +34,23 @@ def main():
                 document_domains = st.text_input(
                     "External document hosts", help="Explicitly allow public PDF/DOCX hosts."
                 )
+                browser_domains = st.text_input(
+                    "Browser resource hosts",
+                    help="Comma-separated exact hosts for JavaScript or public API dependencies, such as cdn.jsdelivr.net.",
+                )
                 resources = st.number_input("Maximum resources", min_value=1, max_value=10000, value=50)
                 depth = st.number_input("Maximum link depth", min_value=0, max_value=30, value=3)
                 duration = st.number_input(
                     "Maximum duration (seconds)", min_value=10, max_value=86400, value=300
                 )
                 render = st.selectbox("JavaScript rendering", ["auto", "always", "never"])
+                timeout = st.number_input(
+                    "Request / render timeout (seconds)",
+                    min_value=1,
+                    max_value=120,
+                    value=20,
+                    help="JavaScript pages with many dependencies may need a longer render timeout.",
+                )
                 ocr = st.checkbox("Read informative images with local OCR", value=True)
             st.caption("Limits control local resource use. They do not measure information completeness.")
             submitted = st.form_submit_button("Start collection", type="primary", width="stretch")
@@ -53,10 +64,12 @@ def main():
                     allowed_domains=split(domains),
                     allowed_paths=split(paths),
                     external_document_domains=split(document_domains),
+                    browser_resource_domains=split(browser_domains),
                     max_resources=resources,
                     max_depth=depth,
                     max_duration_seconds=duration,
                     render=render,
+                    timeout_seconds=timeout,
                     ocr_enabled=ocr,
                 )
                 with st.spinner("Checking destination…"):
@@ -84,11 +97,14 @@ def main():
     )
     st.session_state["selected_job"] = selected
 
-    @st.fragment(run_every=2 if lookup[selected]["status"] == "running" else None)
+    @st.fragment(run_every=2 if lookup[selected]["status"] in {"created", "running"} else None)
     def review():
         job = service.store.job(selected)
         summary = report(service.store, selected)
         resources = service.store.resources(selected)
+        active = job["status"] in {"created", "running"}
+        sources_for_job = service.store.sources(selected)
+        record_count = sum(summary["record_statuses"].values())
         a, b, c, d = st.columns(4)
         a.metric("Status", job["status"].capitalize())
         b.metric("Discovered resources", len(resources))
@@ -99,7 +115,9 @@ def main():
             completed / max(1, len(resources)),
             text=f"{completed} of {len(resources)} discovered resources resolved",
         )
-        if job["status"] == "running":
+        if active:
+            if job["status"] == "created":
+                st.info("Collection is queued. Waiting for the background worker to start…")
             if st.button("Cancel collection", key=f"cancel-{selected}"):
                 service.cancel(selected)
                 st.info("Cancellation requested; active work is being released.")
@@ -107,9 +125,39 @@ def main():
             st.warning(
                 f"{job['status'].capitalize()} collection · {job['termination']}. Review pending URLs, failures and quality flags below."
             )
-        if job["status"] != "running":
+        if not active and record_count == 0:
+            challenges = [item for item in summary["access_issues"] if item["issue"] == "website_challenge"]
+            if challenges:
+                status = challenges[0]["http_status"]
+                st.error(
+                    f"No documents collected: the website returned an anti-bot verification page "
+                    f"(HTTP {status}) instead of its content."
+                )
+                st.caption(
+                    "This collector does not solve website challenges. A page opening in your browser "
+                    "does not mean automated requests are allowed. Ask the site owner to allow the "
+                    "crawler or provide an accessible content export. Increasing crawl limits or "
+                    "reprocessing this response will not recover the missing pages."
+                )
+            else:
+                st.error(
+                    "No documents collected. Collection has stopped; see the failure or skip reasons below."
+                )
+            if summary["failures"] or summary["skips"]:
+                with st.expander("Why collection stopped", expanded=True):
+                    st.dataframe(summary["failures"] + summary["skips"], width="stretch", hide_index=True)
+        if not active:
             left, right = st.columns(2)
-            if left.button("Reprocess saved sources", key=f"reprocess-{selected}"):
+            can_reprocess = any(
+                source.get("resource_id")
+                and 200 <= source["http_status"] < 300
+                and source.get("role") != "encoded_transport"
+                and not any(issue["source_id"] == source["source_id"] for issue in summary["access_issues"])
+                for source in sources_for_job
+            )
+            if left.button(
+                "Reprocess saved sources", key=f"reprocess-{selected}", disabled=not can_reprocess
+            ):
                 with st.spinner("Reprocessing local sources…"):
                     service.reprocess(selected)
                 st.rerun()
@@ -181,7 +229,37 @@ def main():
                     with st.expander("Structured blocks and provenance"):
                         st.json(record)
             else:
-                st.info("Documents will appear here as resources finish extraction.")
+                if active:
+                    st.info("Documents will appear here as resources finish extraction.")
+                else:
+                    st.info("There are no extracted documents in this collection.")
+                    failed_sources = [
+                        s
+                        for s in sources_for_job
+                        if s.get("resource_id") and s.get("role") != "encoded_transport"
+                    ]
+                    if failed_sources:
+                        st.subheader("Saved website response")
+                        choice = st.selectbox(
+                            "Response to inspect",
+                            range(len(failed_sources)),
+                            format_func=lambda i: (
+                                f"HTTP {failed_sources[i]['http_status']} · {failed_sources[i]['final_url']}"
+                            ),
+                            key=f"failed-source-{selected}",
+                        )
+                        raw = failed_sources[choice]
+                        body = (service.store.job_dir(selected) / raw["path"]).read_bytes()
+                        st.caption(
+                            "This is the response received from the website, not extracted page content."
+                        )
+                        st.code(body[:200000].decode("utf-8", errors="replace"), language="html", height=300)
+                        st.download_button(
+                            "Download website response",
+                            body,
+                            file_name=raw["source_id"] + ".bin",
+                            key=f"failed-download-{selected}",
+                        )
         with report_tab:
             st.json(summary)
 

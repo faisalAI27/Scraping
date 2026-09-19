@@ -100,3 +100,63 @@ def test_shipped_example_sources_and_reports_reconcile():
             assert {"section_path", "page", "image_ref", "region"} <= block["location"].keys()
             if block["type"] == "table":
                 assert isinstance(block["headers"], list) and isinstance(block["rows"], list)
+
+
+async def test_success_status_challenge_is_not_rendered_or_reprocessed_as_content(tmp_path, monkeypatch):
+    from siteprep.fetch import FetchAdapter
+    from siteprep.jobs import JobService
+
+    async def must_not_render(*args, **kwargs):
+        raise AssertionError("Challenge must not trigger rendering")
+
+    monkeypatch.setattr(FetchAdapter, "render", must_not_render)
+    with fixture_site() as (origin, counts, _):
+        service = JobService(tmp_path)
+        job_id = service.store.create(
+            origin + "/challenge", Config(render="always", max_sitemaps=0, per_host_delay=0)
+        )
+        report = await Crawler(service.store, job_id, FixtureAccess(origin=origin)).run()
+        assert report["outcomes"] == {"failed": 1}
+        assert report["access_issues"][0]["issue"] == "website_challenge"
+        assert report["access_issues"][0]["http_status"] == 200
+        assert counts["/challenge"] == 1
+    await service._reprocess(job_id)
+    assert service.store.resources(job_id)[0]["record"] is None
+
+
+async def test_invalid_sitemap_does_not_prevent_homepage_extraction(tmp_path, monkeypatch):
+    from siteprep.fetch import FetchAdapter
+
+    original = FetchAdapter.get
+
+    async def html_sitemap(self, url, *args, **kwargs):
+        response = await original(self, url, *args, **kwargs)
+        if url.endswith("/sitemap.xml"):
+            response.body = b'<!doctype html><html><div id="app"></div></html>'
+            response.headers["content-type"] = "text/html"
+        return response
+
+    monkeypatch.setattr(FetchAdapter, "get", html_sitemap)
+    with fixture_site() as (origin, counts, _):
+        store = Store(tmp_path)
+        job_id = store.create(origin + "/short", Config(per_host_delay=0))
+        result = await Crawler(store, job_id, FixtureAccess(origin=origin)).run()
+        assert result["termination_reason"] == "queue_exhausted"
+        assert any("invalid_sitemap" in w for w in result["warnings"])
+        assert result["record_statuses"] == {"ready": 1}
+        assert counts["/short"] == 1
+
+
+async def test_render_waits_for_chained_rate_limited_requests(tmp_path):
+    with fixture_site() as (origin, counts, _):
+        store = Store(tmp_path)
+        job_id = store.create(
+            origin + "/js-chain",
+            Config(max_sitemaps=0, per_host_delay=0.4, render_wait_ms=0),
+        )
+        result = await Crawler(store, job_id, FixtureAccess(origin=origin)).run()
+        records = [json.loads(r["record"]) for r in store.resources(job_id) if r["record"]]
+        assert result["record_statuses"] == {"ready": 1}
+        assert "Closed Sundays." in json.dumps(records)
+        assert "Loading..." not in json.dumps(records)
+        assert counts["/api/message"] == counts["/short"] == 1

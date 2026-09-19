@@ -140,6 +140,13 @@ def fixture_site():
                 body = b"<main><h1>Services</h1><p>Installation includes testing.</p></main>"
             elif path == "/short":
                 body = b"<p>Closed Sundays.</p>"
+            elif path == "/js-chain":
+                body = b"""<main id="app">Loading...</main><script>
+                fetch('/api/message').then(r=>r.json()).then(()=>fetch('/short'))
+                .then(r=>r.text()).then(text=>document.getElementById('app').innerHTML=text);
+                </script>"""
+            elif path == "/challenge":
+                body = b"<title>Just a moment...</title><script>window._cf_chl_opt = {};</script><p>Enable JavaScript and cookies to continue.</p>"
             elif path == "/js":
                 body = b"""<html><body><main id="app">Loading...</main><script>
                 fetch('/api/message').then(r=>r.json()).then(d=>document.getElementById('app').innerHTML='<h1>Availability</h1><p>'+d.text+'</p><a href="/rendered-only">Details</a>');

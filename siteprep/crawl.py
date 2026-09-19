@@ -77,11 +77,15 @@ class Crawler:
                     self.store.save_response(
                         self.job_id, None, response, role="robots", requested_url=robots_url
                     )
+                    if response.metadata().get("access_issue") == "website_challenge":
+                        raise FetchError("robots_website_challenge")
                     parser = RobotFileParser()
                     if response.status in {404, 410}:
                         parser.parse([])
                         parser.allow_all = True
                     elif 200 <= response.status < 300:
+                        if response.body.lstrip().lower().startswith((b"<!doctype html", b"<html")):
+                            self.warn(f"robots_returned_html:{host_origin}")
                         parser.parse(response.body.decode("utf-8", errors="replace").splitlines())
                     else:
                         raise FetchError(f"robots_http_{response.status}")
@@ -144,6 +148,8 @@ class Crawler:
             response = await self.fetcher.get(url, resource["kind"])
             source = self.store.save_response(self.job_id, rid, response, requested_url=url)
             self.store.update_resource(rid, "downloaded")
+            if source.get("access_issue") == "website_challenge":
+                raise FetchError(f"website_challenge:http_{response.status}")
             if not 200 <= response.status < 300:
                 raise FetchError(f"http_{response.status}")
             content_type = detect_type(response.body, response.headers.get("content-type", ""))
@@ -167,6 +173,8 @@ class Crawler:
                             rendered_source = self.store.save_response(
                                 self.job_id, rid, rendered, requested_url=url
                             )
+                            if rendered_source.get("access_issue") == "website_challenge":
+                                raise FetchError(f"website_challenge:http_{rendered.status}")
                             if not 200 <= rendered.status < 300:
                                 raise FetchError(f"browser_http_{rendered.status}")
                             source, response = rendered_source, rendered

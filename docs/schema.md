@@ -57,5 +57,9 @@ headers are not exported.
 `attempts.json` distinguishes HTTP, robots, sitemap, browser HTTP and rendering
 operations. The report embeds counting definitions; attempts and unique resources
 are deliberately separate. Control files do not consume content resource counts.
+The report's `access_issues` identifies denied, rate-limited and recognized challenge
+responses by URL, HTTP status and saved source ID, including historical jobs diagnosed
+offline. Recognized challenge pages are not accepted as source documents even if they
+return HTTP 200.
 A capped discovery list cannot enumerate URLs it never admitted; that limitation is
 represented by a warning.

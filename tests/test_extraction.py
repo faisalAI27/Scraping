@@ -6,6 +6,28 @@ from siteprep.extract import extract, detect_type
 from .fixture_site import HOME, binary_fixtures
 
 
+async def test_worker_group_cleanup_race_preserves_successful_result(monkeypatch):
+    from types import SimpleNamespace
+    from unittest.mock import Mock
+    from siteprep import extract as module
+
+    if module.os.name != "posix":
+        return
+    expected = {"blocks": [{"type": "paragraph", "text": "Closed Sundays."}]}
+    parent, child = Mock(), Mock()
+    parent.poll.return_value = True
+    parent.recv.return_value = (True, expected)
+    process = Mock(pid=12345)
+    process.is_alive.side_effect = [True, False]
+    context = SimpleNamespace(Pipe=lambda **kw: (parent, child), Process=lambda **kw: process)
+    monkeypatch.setattr(module.multiprocessing, "get_context", lambda *a: context)
+    monkeypatch.setattr(module.os, "killpg", Mock(side_effect=PermissionError("group exited")))
+    result = await module.extract_isolated(b"<p>Closed Sundays.</p>", "text/html", Config(), lambda: None)
+    assert result == expected
+    process.terminate.assert_called_once()
+    process.join.assert_called_once_with(2)
+
+
 def test_cleaning_preserves_policies_units_contact_and_structure():
     result = extract(HOME, "text/html", Config())
     blocks, actions = clean_blocks(result["blocks"])

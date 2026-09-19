@@ -79,7 +79,12 @@ def links(body, base, config):
 
 
 def sitemap(body):
-    root = etree.fromstring(body, parser=etree.XMLParser(resolve_entities=False, no_network=True))
+    if re.search(rb"<(?:!doctype\s+html|html)(?:\s|>)", body[:2048], re.I):
+        raise ValueError("invalid_sitemap: HTML returned instead of sitemap XML")
+    try:
+        root = etree.fromstring(body, parser=etree.XMLParser(resolve_entities=False, no_network=True))
+    except etree.XMLSyntaxError as exc:
+        raise ValueError("invalid_sitemap: malformed XML") from exc
     name = etree.QName(root).localname
     if name not in {"sitemapindex", "urlset"}:
         raise ValueError("invalid_sitemap")

@@ -66,11 +66,16 @@ are rejected. All supported settings and constraints are defined in
 * `allowed_paths` uses path boundaries; `/help` does not include `/helpful`.
 * `external_document_domains` adds explicit PDF/DOCX hosts.
 * `browser_resource_domains` adds explicit hosts for browser script/API resources.
+  The UI exposes this as **Browser resource hosts**. These hosts still undergo
+  destination and robots checks.
 * Queries that identify content are retained. Common tracking parameters are removed.
 * Hash routes are flagged by default; set `hash_routes: follow` to schedule routes.
 * `max_resources`, depth, discovery, sitemap, query-variant, byte, time and OCR caps
   control resource use. They are not knowledge-completeness thresholds.
 * `render: auto` uses JS evidence; `always` and `never` are per-job overrides.
+  Rendering waits for active request chains to settle within `timeout_seconds`
+  (UI: **Request / render timeout**). An unavailable dependency can still leave
+  an incomplete page; inspect browser warnings and the saved rendered source.
 * `manual_image_urls` includes informative images missed by heuristics.
 * `remove_selectors` provides optional CSS-based cleaning overrides.
 * No setting permits arbitrary private network access.
@@ -78,6 +83,8 @@ are rejected. All supported settings and constraints are defined in
 Requests identify as SitePrep, respect robots and throttle each host. Retries apply
 to transient failures/rate limits, with `Retry-After` bounded by the job budget.
 Authentication, CAPTCHA solving, forms and access-control bypass are out of scope.
+Malformed sitemaps, including sites returning their HTML homepage at `/sitemap.xml`,
+produce discovery warnings and do not prevent the seed page from being collected.
 
 ## Outputs
 
@@ -121,6 +128,11 @@ The checked-in [fixture output](examples/fixture-job/crawl_report.json) and
 
 ## Troubleshooting
 
+* No documents / HTTP 403: a site may return an anti-bot verification page instead of
+  content. The interface shows the access failure and saved response, including for
+  older jobs. NUST's homepage returned this response in the observed September 19,
+  2026 runs. Increasing limits, rendering settings or reprocessing that response does
+  not recover missing content; site-owner allowlisting or an accessible export is needed.
 * Browser executable missing: rerun `uv run playwright install chromium`.
 * OCR unavailable: verify `tesseract --version` and `tesseract --list-langs`.
 * A page is missing JS content: inspect raw HTML/flags, then try `render: always` in a

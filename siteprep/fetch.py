@@ -11,6 +11,7 @@ from urllib.parse import urljoin, urlsplit
 import httpx
 
 from .storage import now
+from .diagnostics import access_issue
 from .urls import kind_for, normalize, origin
 
 
@@ -41,6 +42,7 @@ class Response:
             "fetch_method": self.method,
             "fetch_timestamp": self.timestamp,
             "warnings": self.warnings,
+            "access_issue": access_issue(self.status, self.body, self.headers),
             "body_representation": "decoded_http_entity" if self.wire_body is not None else "response_body",
         }
 
@@ -244,10 +246,13 @@ class FetchAdapter:
         page = await self.context.new_page()
         warnings, count, size = [], 0, 0
         main_response = None
+        pending = 0
+        last_activity = time.monotonic()
 
         async def route_request(route):
-            nonlocal count, size, main_response
+            nonlocal count, size, main_response, pending, last_activity
             req = route.request
+            pending += 1
             try:
                 self.checkpoint()
                 count += 1
@@ -277,8 +282,11 @@ class FetchAdapter:
                 headers = {k: v for k, v in response.headers.items() if k in {"content-type"}}
                 await route.fulfill(status=response.status, headers=headers, body=response.body)
             except (Exception, asyncio.CancelledError) as exc:
-                warnings.append(f"browser_request_blocked: {type(exc).__name__}: {exc}")
+                warnings.append(f"browser_request_blocked: {req.url}: {type(exc).__name__}: {exc}")
                 await route.abort()
+            finally:
+                pending -= 1
+                last_activity = time.monotonic()
 
         try:
             await page.route("**/*", route_request)
@@ -287,6 +295,11 @@ class FetchAdapter:
                     url, wait_until="domcontentloaded", timeout=self.config.timeout_seconds * 1000
                 )
                 await self.pause(self.config.render_wait_ms / 1000)
+                # Requests may be waiting on our host rate limit, and completed
+                # scripts can start more requests. Drain those chains before
+                # taking the snapshot, within the same overall render timeout.
+                while pending or time.monotonic() - last_activity < 0.3:
+                    await self.pause(0.05)
                 body = (await page.content()).encode()
                 final_url = normalize(page.url, hash_routes=self.config.hash_routes == "follow")
                 self.policy.scope(final_url)

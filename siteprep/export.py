@@ -4,6 +4,7 @@ import zipfile
 from collections import Counter
 
 from .clean import block_text
+from .diagnostics import saved_access_issues
 
 
 def markdown(record):
@@ -103,6 +104,7 @@ def report(store, job_id):
         "skips": [{"url": r["url"], "reason": r["reason"]} for r in resources if r["state"] == "skipped"],
         "warnings": json.loads(job["warnings"]),
         "quality_flags": dict(Counter(f for r in records for f in r["quality_flags"])),
+        "access_issues": saved_access_issues(store, job_id, sources),
         "counting_definitions": {
             "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
             "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",

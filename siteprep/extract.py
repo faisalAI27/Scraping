@@ -589,7 +589,9 @@ async def extract_isolated(body, content_type, config, checkpoint):
             if os.name == "posix":
                 try:
                     os.killpg(process.pid, signal.SIGTERM)
-                except ProcessLookupError:
+                except (ProcessLookupError, PermissionError):
+                    # On macOS a group that exited between is_alive() and
+                    # killpg() can report EPERM. Fall back to the owned child.
                     process.terminate()
             else:
                 process.terminate()

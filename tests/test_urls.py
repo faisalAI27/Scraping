@@ -38,3 +38,11 @@ def test_short_page_is_not_a_render_signal():
     assert sitemap(
         b"<sitemapindex><sitemap><loc>https://example.com/a.xml</loc></sitemap></sitemapindex>"
     ) == (True, ["https://example.com/a.xml"])
+
+
+@pytest.mark.parametrize(
+    "body", [b'<!doctype html><html><div id="app"></div></html>', b"<urlset><url>", b"<html/>", b""]
+)
+def test_invalid_sitemaps_raise_recoverable_errors(body):
+    with pytest.raises(ValueError, match="invalid_sitemap"):
+        sitemap(body)
