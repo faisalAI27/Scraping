@@ -1,0 +1,52 @@
+[
+  {
+    "id": 45,
+    "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+    "url": "https://quotes.toscrape.com/robots.txt",
+    "method": "robots",
+    "timestamp": "2026-09-19T12:07:37.798672+00:00",
+    "status": 404,
+    "reason": null,
+    "bytes": 207
+  },
+  {
+    "id": 46,
+    "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+    "url": "https://quotes.toscrape.com/js/",
+    "method": "http",
+    "timestamp": "2026-09-19T12:07:38.312265+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 5808
+  },
+  {
+    "id": 47,
+    "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+    "url": "https://quotes.toscrape.com/js/",
+    "method": "browser_http",
+    "timestamp": "2026-09-19T12:07:39.592618+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 5808
+  },
+  {
+    "id": 48,
+    "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+    "url": "https://quotes.toscrape.com/static/jquery.js",
+    "method": "browser_http",
+    "timestamp": "2026-09-19T12:07:41.096431+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 84345
+  },
+  {
+    "id": 49,
+    "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+    "url": "https://quotes.toscrape.com/js/",
+    "method": "browser",
+    "timestamp": "2026-09-19T12:07:42.687167+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 0
+  }
+]

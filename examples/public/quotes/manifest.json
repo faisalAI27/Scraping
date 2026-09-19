@@ -1,0 +1,120 @@
+{
+  "sources": [
+    {
+      "final_url": "https://quotes.toscrape.com/robots.txt",
+      "http_status": 404,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "content-length": "207"
+      },
+      "fetch_method": "robots",
+      "fetch_timestamp": "2026-09-19T12:07:37.799249+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "role": "robots",
+      "requested_url": "https://quotes.toscrape.com/robots.txt",
+      "source_id": "6131f40013d24670b7106646a5968a04",
+      "content_hash": "e9639e3c4681ce85f852fbac48e2eeee5ba51296dbfec57c200d59b76237ab80",
+      "size": 207,
+      "path": "raw/6131f40013d24670b7106646a5968a04.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "https://quotes.toscrape.com/js/",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "content-length": "5808"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:07:38.313276+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "requested_url": "https://quotes.toscrape.com/js/",
+      "source_id": "9db206c2e043465595bacd395762fecb",
+      "content_hash": "a9067d4438044d45a1a895ed6939df4fa4d0487e17b82053dd694ad425466074",
+      "size": 5808,
+      "path": "raw/9db206c2e043465595bacd395762fecb.bin",
+      "resource_id": "1d89e6320308b1b4466d473dd47a28f6"
+    },
+    {
+      "final_url": "https://quotes.toscrape.com/js/",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "fetch_method": "browser",
+      "fetch_timestamp": "2026-09-19T12:07:42.687894+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "requested_url": "https://quotes.toscrape.com/js/",
+      "source_id": "069e0366ce15436c90f250f82181bbf7",
+      "content_hash": "b6d656f508cbbb0df37ec664f4363c41aa4fb497395e206ed24c497cd75ad110",
+      "size": 8985,
+      "path": "raw/069e0366ce15436c90f250f82181bbf7.bin",
+      "resource_id": "1d89e6320308b1b4466d473dd47a28f6"
+    }
+  ],
+  "resources": [
+    {
+      "id": "1d89e6320308b1b4466d473dd47a28f6",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://quotes.toscrape.com/js/",
+      "parent": null,
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "1023adedbfc8423dd4218bb662c20735",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://quotes.toscrape.com/",
+      "parent": "https://quotes.toscrape.com/js/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2b598667b253fe13157d8090d00f7916",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://quotes.toscrape.com/login",
+      "parent": "https://quotes.toscrape.com/js/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "141340cb9084b88a80a7722e3c1bf4e6",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://quotes.toscrape.com/js/page/2/",
+      "parent": "https://quotes.toscrape.com/js/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "1ff11ad5e2c4867704174396c79e5c52",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://www.goodreads.com/quotes",
+      "parent": "https://quotes.toscrape.com/js/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "e437f159dd86361b7f64a91d516c1efa",
+      "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+      "url": "https://www.zyte.com/",
+      "parent": "https://quotes.toscrape.com/js/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    }
+  ]
+}

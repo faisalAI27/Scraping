@@ -1,0 +1,48 @@
+{
+  "prepared_at": "2026-09-19T12:07:30.646115+00:00",
+  "cases": [
+    {
+      "name": "python",
+      "url": "https://www.python.org/about/",
+      "sector": "software nonprofit",
+      "facts": [
+        "Python Software Foundation",
+        "OSI-approved open source license"
+      ],
+      "render": "auto"
+    },
+    {
+      "name": "books",
+      "url": "https://books.toscrape.com/",
+      "sector": "retail demonstration sandbox",
+      "facts": [
+        "Tipping the Velvet",
+        "\u00a353.74",
+        "\u00a351.77",
+        "In stock"
+      ],
+      "render": "auto"
+    },
+    {
+      "name": "government",
+      "url": "https://www.gov.uk/bank-holidays",
+      "sector": "public information",
+      "facts": [
+        "Christmas Day",
+        "Boxing Day (substitute day)",
+        "Your employer does not have to give you"
+      ],
+      "render": "auto"
+    },
+    {
+      "name": "quotes",
+      "url": "https://quotes.toscrape.com/js/",
+      "sector": "JavaScript demonstration sandbox",
+      "facts": [
+        "Albert Einstein",
+        "Jane Austen"
+      ],
+      "render": "always"
+    }
+  ]
+}

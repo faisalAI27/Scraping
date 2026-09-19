@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/robots.txt",
+    "method": "robots",
+    "timestamp": "2026-09-19T12:04:16.178593+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 32
+  },
+  {
+    "id": 2,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/sitemap.xml",
+    "method": "sitemap",
+    "timestamp": "2026-09-19T12:04:16.181967+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 91
+  },
+  {
+    "id": 3,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/child.xml",
+    "method": "sitemap",
+    "timestamp": "2026-09-19T12:04:16.184918+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 121
+  },
+  {
+    "id": 4,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:16.191493+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 1680
+  },
+  {
+    "id": 5,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/service",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:16.215276+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 67
+  },
+  {
+    "id": 7,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/?page=2",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:16.844056+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 80
+  },
+  {
+    "id": 8,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/brochure.pdf",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:16.850158+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 1592
+  },
+  {
+    "id": 10,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/policy.docx",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:17.431577+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 36857
+  },
+  {
+    "id": 11,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/scanned.pdf",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:17.438572+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 14038
+  },
+  {
+    "id": 12,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/mixed.pdf",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:18.426815+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 14127
+  },
+  {
+    "id": 13,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/notice.png",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:18.433097+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 12356
+  },
+  {
+    "id": 14,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/js",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:19.111159+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 410
+  },
+  {
+    "id": 15,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/short",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:19.153086+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 22
+  },
+  {
+    "id": 16,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/js",
+    "method": "browser_http",
+    "timestamp": "2026-09-19T12:04:19.966934+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 410
+  },
+  {
+    "id": 17,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/api/message",
+    "method": "browser_http",
+    "timestamp": "2026-09-19T12:04:19.991558+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 43
+  },
+  {
+    "id": 18,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/js",
+    "method": "browser",
+    "timestamp": "2026-09-19T12:04:20.506758+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 0
+  },
+  {
+    "id": 19,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/transient",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:21.044801+00:00",
+    "status": 503,
+    "reason": null,
+    "bytes": 35
+  },
+  {
+    "id": 20,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/failure",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:21.046876+00:00",
+    "status": 503,
+    "reason": null,
+    "bytes": 11
+  },
+  {
+    "id": 21,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/transient",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.057862+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 35
+  },
+  {
+    "id": 22,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/failure",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.072724+00:00",
+    "status": 503,
+    "reason": null,
+    "bytes": 11
+  },
+  {
+    "id": 23,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/large",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.680351+00:00",
+    "status": 200,
+    "reason": "LimitError: download_size_limit",
+    "bytes": 0
+  },
+  {
+    "id": 24,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/redirect-private",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.684122+00:00",
+    "status": 302,
+    "reason": null,
+    "bytes": 0
+  },
+  {
+    "id": 25,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/rate",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.686217+00:00",
+    "status": 429,
+    "reason": null,
+    "bytes": 34
+  },
+  {
+    "id": 26,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/rate",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:22.688364+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 34
+  },
+  {
+    "id": 27,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/old.doc",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:23.111087+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 15
+  },
+  {
+    "id": 28,
+    "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+    "url": "http://127.0.0.1:62934/rendered-only",
+    "method": "http",
+    "timestamp": "2026-09-19T12:04:23.117488+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 36
+  }
+]

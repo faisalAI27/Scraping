@@ -1,0 +1,785 @@
+{
+  "sources": [
+    {
+      "final_url": "https://books.toscrape.com/robots.txt",
+      "http_status": 404,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "153"
+      },
+      "fetch_method": "robots",
+      "fetch_timestamp": "2026-09-19T12:07:33.288012+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "role": "robots",
+      "requested_url": "https://books.toscrape.com/robots.txt",
+      "source_id": "bf87e378f3ab4252b949ee25134bb0e5",
+      "content_hash": "6ad407809dc8e6d079dfbd21823508dffb897b97a27eb8ae43acbea1b7c8df0d",
+      "size": 153,
+      "path": "raw/bf87e378f3ab4252b949ee25134bb0e5.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "https://books.toscrape.com/",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "51294",
+        "last-modified": "Wed, 08 Feb 2023 21:02:32 GMT",
+        "etag": "\"63e40de8-c85e\""
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:07:34.527596+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "requested_url": "https://books.toscrape.com/",
+      "source_id": "5a16700f6c1b4ae19f911df01e039685",
+      "content_hash": "9fdd63da34161ebd13408d7a85105f83ec3c9f351c5d77cd0aa578790e121c1e",
+      "size": 51294,
+      "path": "raw/5a16700f6c1b4ae19f911df01e039685.bin",
+      "resource_id": "43144fdacd60beb4578417d0aadbc2b3"
+    }
+  ],
+  "resources": [
+    {
+      "id": "43144fdacd60beb4578417d0aadbc2b3",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/",
+      "parent": null,
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "bb6b67b9ca6579e5c6297278003dd559",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "18d27da64d6538290ee08dd73ea5483c",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books_1/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "26e06cb08cc0ff342015c5e42ff7a91b",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3d1852421c6c2d8beb236a6836001a0a",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a02b42b2e781ee039fa216bd683d8ae6",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e770b6f3d293ef689f8e86eb9ed0d080",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ee33c84e3fd9b298b41b14ffd523d37e",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ce28c016c94ace15239e238718f8c57e",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bfa27664f6d83d619acd0f55683aabf9",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ec18be7a1166a5657a74f8f8ca145f13",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "6bc3c98a6fdfcb3f9e5dd46559ebf2dd",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "c3d493b6698c2ebd6dd3063b4f2a93c4",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "58c6987894e1751554c8dacd1c9b0b30",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "8fb82c5abcb90bc13072d7631e44bfd2",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "91fcf2163be872312045fa31ff739617",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/music_14/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "82974cb628267a4f29edd9d877925a1e",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/default_15/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "06b399e139bd9d220ed5366763646054",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d75fbdf9f74725be858d6badd8cceb7b",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "16dd6a47772c6e0d4c4048a6cfc49d28",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "371440e6d5bc67f5e653088bca252e60",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "431e95802b0505fd2776b74f8e8c94e8",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "dbd348a8d13a873ac17197cb464a632b",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b2020eb3166478289feb8aea63b27c76",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3c4657ca91d1f0774b318af02a557b60",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bab120d96ff86b3c5a7c8a05d3931648",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4fd8e683db27be10ba03d361b3340a68",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e7fde2abeea8b546d2d9f10be4bb1170",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "da0ed9af7f5b9e139e2e12f3dee44016",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "821b1034ee26edabda27d3d725bef01b",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "c404117382906a4fd813a405f6103b6f",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "1939d75788e2ad28acc6861efbe6a009",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e5bdea7ad7b0995722eedcab463d984e",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "7bb92df583d5be507f0c0a38fde8a095",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "972e08617a7e72e5f704b3a7693d7d31",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "80367e7756aedda92db236a41df90ecb",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2aa775c4a59f0d3234a691c466d71fb0",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "6a03fd46fde01b210a263b7bfa730c35",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "57f061c16ec47c9dc9e44868564e5dd7",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a727b76b90c491bc4d4c4f8314753180",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ec6bbc5889c237bb10822ec3648a97d0",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bb66351c09e9118820819b9cc7f59200",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d0404dc35b5f42bf62f73ab5b8d98624",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f777b274013ead27a768dba26fd7c094",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "5e3075995ba8f376a4a449a1041113e0",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "af7ca6b19f52c41b485d63fcd74a540e",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bc33415c42c24e26ea11f8fbbea4bf15",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "cfc0af877c32920de7307e8212e28ebc",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "82ee5bb40c2efa98a9bae79eac4a8c0d",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "c8fca0258a35ef2783517817c067988d",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d0e5a33dcc2eef3061a6ecc02aa8ac09",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "61944386d5ab0947626993742a5eeaf9",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "caadc8b211e587b9381b8877d565130b",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e247b94744217b3cb502a479c5204c23",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "fcc0cdf32c61d90aa2cfb99ff2371bcd",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "655a63f60685beb0e4480724120c4bfe",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/soumission_998/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4977a96bc584e8ceea34656e903684b0",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "41db48036b65a933bf72b87bd4ff2090",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "35b6570bdf6dde948a0e0ec1511a70d4",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "9a0279665937286c322762ed99f77343",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b9fa6483639ef3f1dfc6a3eacff89737",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2bc65d4901107003016e99daf6d744b9",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "9613dcc2fc71c11ac18491aa436b2e29",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f57d04eeb09ac55ba12e12c90a69e686",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f4fc2a28b89a4855592b109c792076a5",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "02497c995351355f08eea9b2e8f2d224",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/set-me-free_988/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a932010a1e138fc8175d9122da4c9c55",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "6d47a19d69afa795a83aeeb38a09c052",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "fae978b96a2ef07559bb087062d9ac53",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "431274a04a69b6fea9503c3414409f54",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/olio_984/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ab6e181d60b9bcf635ce87c6f064aafe",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ee98afc1635f1cbd6d8007ccbc0ff9eb",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e44c4cb7218109a30ebb6db53a5452bd",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "242fe2780c1f0fdc45f2d65855f4b053",
+      "job_id": "6e17253fe80a4e7e99d84067fc1fbb94",
+      "url": "https://books.toscrape.com/catalogue/page-2.html",
+      "parent": "https://books.toscrape.com/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    }
+  ]
+}

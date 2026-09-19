@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "siteprep"
+version = "0.1.0"
+description = "Local, source-linked website collection and deterministic cleaning"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "trafilatura>=2.0,<3", "lxml>=6,<7", "cssselect>=1.3,<2", "pdfplumber>=0.11,<0.12",
+  "python-docx>=1.2,<2", "Pillow>=11,<13", "pytesseract>=0.3.13,<0.4",
+  "pydantic>=2.11,<3", "PyYAML>=6,<7", "streamlit>=1.45,<2",
+  "httpx==0.28.1", "playwright==1.63.0", "pypdfium2>=4.30,<6"
+]
+
+[project.optional-dependencies]
+evaluation = ["scrapling[fetchers]==0.4.15"]
+
+[project.scripts]
+siteprep = "siteprep.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=1,<2", "reportlab>=5,<6", "ruff>=0.12"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.hatch.build.targets.wheel]
+packages = ["siteprep"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 39,
+    "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+    "url": "https://www.python.org/robots.txt",
+    "method": "robots",
+    "timestamp": "2026-09-19T12:07:31.399495+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 537
+  },
+  {
+    "id": 40,
+    "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+    "url": "https://www.python.org/about/",
+    "method": "http",
+    "timestamp": "2026-09-19T12:07:31.990314+00:00",
+    "status": 200,
+    "reason": null,
+    "bytes": 8945
+  }
+]

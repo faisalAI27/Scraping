@@ -1,0 +1,526 @@
+{
+  "sources": [
+    {
+      "final_url": "https://www.gov.uk/robots.txt",
+      "http_status": 200,
+      "headers": {
+        "content-length": "1097",
+        "content-type": "text/plain; charset=utf-8",
+        "last-modified": "Fri, 18 Sep 2026 09:50:12 GMT",
+        "etag": "\"6aad0954-449\""
+      },
+      "fetch_method": "robots",
+      "fetch_timestamp": "2026-09-19T12:07:35.492802+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "role": "robots",
+      "requested_url": "https://www.gov.uk/robots.txt",
+      "source_id": "423495db3c29497799f3d45273c23437",
+      "content_hash": "459835d29527b9c00f00f6af00f45c73a909af1944e81fefa153f585e1857305",
+      "size": 1097,
+      "path": "raw/423495db3c29497799f3d45273c23437.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "https://www.gov.uk/bank-holidays",
+      "http_status": 200,
+      "headers": {
+        "content-length": "175904",
+        "content-type": "text/html; charset=utf-8",
+        "etag": "W/\"d7ca2834c562a3d131a8677a5525ed4c\""
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:07:36.490810+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "requested_url": "https://www.gov.uk/bank-holidays",
+      "source_id": "0e83e861c5344267b19ce79923a44735",
+      "content_hash": "d7ca2834c562a3d131a8677a5525ed4cc1489ec8678a4e6a184cbecf10b6dee4",
+      "size": 175904,
+      "path": "raw/0e83e861c5344267b19ce79923a44735.bin",
+      "resource_id": "43a3e92f7b4ff9d0a74b11364f9b6198"
+    }
+  ],
+  "resources": [
+    {
+      "id": "43a3e92f7b4ff9d0a74b11364f9b6198",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/bank-holidays",
+      "parent": null,
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "7d62f63447c55b683e0b54e97fbbf970",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/help/cookies",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d68d58c522c1497c9861d245cb75e01b",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "9c790984d4b1dd5ce9a504d93f9340b4",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e7ac9c8ec440ad6fef527faf91ccd8b9",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/benefits",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "98c996bafc5fac0d41b1409599357531",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/births-deaths-marriages",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e71a32676b0f0d892f23a77b70fc5b38",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/business",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "48688aa2213c0e29fd97e2e9b9558a5b",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/childcare-parenting",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e50c6e92143c8c01eaa9e017c05ebe04",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/citizenship",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "67d15b41009dbb13ca187a2c8f1ff19f",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/justice",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2f757e560a7b5cfe14d716a4524df68a",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/disabilities",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "88592955410f46d3857b06e1a82afdb8",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/driving",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bea5ad9b43e0bc99b57e0badbbef7e62",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/education",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f33b637efa9024e84a423deed8dbfeb1",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/employing-people",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "efa751be2a42dc8366d8b9fc394a937b",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/environment-countryside",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "663aa74360734d6dbb63dca61615fc1f",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/housing-local-services",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "0f8adc11d317c0e4a0a0afd229a19bab",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/tax",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "7b1186842f4970eca297a1f02f520ec4",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/abroad",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "c6c67473230118d111a468a6e404b3a4",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/visas-immigration",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "40c1a106f35416278724d63582280c1a",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/working",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "831b18983df34265ab73c0019301a695",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/government/organisations",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "6c0b4748db2dc66840f283057fa6083b",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search/news-and-communications",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "27a6b7cc0c1c3f6eea1257d5b13379d7",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search/guidance-and-regulation",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "8aa17cede1f1d4199b8e47a41a560374",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search/research-and-statistics",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "5ba43a5e20d8d14ff985a5dd3bff9931",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "08b3b9c0de738837aeed07a93b56ae96",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search/transparency-and-freedom-of-information-releases",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a5348c8f04a5ad13b34ada43917dd8ce",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/search",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ebef53031384427fe338a0a512048caf",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/browse/working/time-off",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "988322de446df74486d38b12fa888418",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/holiday-entitlement-rights",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "57665ea2c697c9315b8f7aa87e543954",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/how-to-have-your-benefits-paid",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4786317308de969318c19129f90cd3a9",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/gwyliau-banc",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2d7a0a5111194318b14e51c82d3076ce",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/bank-holidays/england-and-wales.ics",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "cb040f57d565d6d672199b72cf4b1096",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/bank-holidays/scotland.ics",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a32b2dbd57f9917370d50140ad5b12bf",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/bank-holidays/northern-ireland.ics",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f2f18795f2b373aaecfc260399f712aa",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/school-term-holiday-dates",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "08112aa9e5fc400fb14d9f05ca9e7f25",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/contact/govuk",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b14e363283beae8522d1e82892847717",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=no-js",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "1073b82af67dca13f967594d58f846b6",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/government/how-government-works",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3bb838934de3e503375fc062ddb975ba",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/government/get-involved",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2329389310891f1ca4474cd832e2c9a7",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/help",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "62c467b17eca6552f72e3ec8f98524e5",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/help/privacy-notice",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "bf60b67cf8216f73b27860425d8692bc",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/help/accessibility-statement",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4b1754193e7cdd4222f166640b6416c0",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/contact",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "13628b106888703c70b4dc6e8dc3a685",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/help/terms-conditions",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d74869dfdff663d7f294cbe857516794",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/cymraeg",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b25d0a8a670a4a8eca59fe9c2989fbd7",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.gov.uk/government/organisations/government-digital-service",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b93116195ca0885bd4a11b79dbda6b90",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "6b386046131e847bbf675da746727f50",
+      "job_id": "36e6142b376c44fdb9adce2a52003dad",
+      "url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+      "parent": "https://www.gov.uk/bank-holidays",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    }
+  ]
+}

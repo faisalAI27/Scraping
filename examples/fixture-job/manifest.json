@@ -1,0 +1,524 @@
+{
+  "sources": [
+    {
+      "final_url": "http://127.0.0.1:62934/robots.txt",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/plain",
+        "content-length": "32"
+      },
+      "fetch_method": "robots",
+      "fetch_timestamp": "2026-09-19T12:04:16.178929+00:00",
+      "warnings": [],
+      "role": "robots",
+      "requested_url": "http://127.0.0.1:62934/robots.txt",
+      "source_id": "6f9466d42edc4d65bbf2ea84a62a4483",
+      "content_hash": "822a1b86f2fd0f563070c8955cb05ca2681d45ef000c2eaeae0f1b7db7125698",
+      "size": 32,
+      "path": "raw/6f9466d42edc4d65bbf2ea84a62a4483.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/sitemap.xml",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "content-length": "91"
+      },
+      "fetch_method": "sitemap",
+      "fetch_timestamp": "2026-09-19T12:04:16.182264+00:00",
+      "warnings": [],
+      "role": "sitemap",
+      "requested_url": "http://127.0.0.1:62934/sitemap.xml",
+      "source_id": "605ec23dbff34d248df9df6ba39b0f44",
+      "content_hash": "620da0550e967eaaabba8e6187d1fb53439def196c9a8392be4519dd9f940f9d",
+      "size": 91,
+      "path": "raw/605ec23dbff34d248df9df6ba39b0f44.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/child.xml",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/xml",
+        "content-length": "121"
+      },
+      "fetch_method": "sitemap",
+      "fetch_timestamp": "2026-09-19T12:04:16.185102+00:00",
+      "warnings": [],
+      "role": "sitemap",
+      "requested_url": "http://127.0.0.1:62934/child.xml",
+      "source_id": "5264390ab9ce4414a81caad4e5d3da8e",
+      "content_hash": "d207cbaca91719c611c79049ef9f9a3d26608a3f8fa3533784c022b543d5efa3",
+      "size": 121,
+      "path": "raw/5264390ab9ce4414a81caad4e5d3da8e.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "1680"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:16.191763+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/",
+      "source_id": "2215f1c13c424533a66cc7d972e82b73",
+      "content_hash": "0298d50dc4474f3da94bc4b0907d305470b09a6e2c747c4c1a80e4dd82848942",
+      "size": 1680,
+      "path": "raw/2215f1c13c424533a66cc7d972e82b73.bin",
+      "resource_id": "ad6efa8f3258bdc76f7ea8ca00d0c03e"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/service",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "67"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:16.215539+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/service",
+      "source_id": "d36a5b6f6a6248d5ba115911c6431ebb",
+      "content_hash": "bddbcf7399aed98d0c1c5e88a42917bfe5a8d5d21814e4c9f4f43043692ffef7",
+      "size": 67,
+      "path": "raw/d36a5b6f6a6248d5ba115911c6431ebb.bin",
+      "resource_id": "b65436728519de2f295f64cf2c657095"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/?page=2",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "80"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:16.844235+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/?page=2",
+      "source_id": "f781edad06a0416c83a4bac57892edd9",
+      "content_hash": "ce740a0056bce4e2f9877f481ec430fe710d57bbc8c1f5e962ae7dd2de9de045",
+      "size": 80,
+      "path": "raw/f781edad06a0416c83a4bac57892edd9.bin",
+      "resource_id": "3449dcfc8d194e0683adcae4661c7eb9"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/brochure.pdf",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/pdf",
+        "content-length": "1592"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:16.850389+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/brochure.pdf",
+      "source_id": "46d9300b206d4502bcb5ed5f912185a1",
+      "content_hash": "a96c064128d98d841c940b68df5d560750269555c174697b6e84e7ba22d9de91",
+      "size": 1592,
+      "path": "raw/46d9300b206d4502bcb5ed5f912185a1.bin",
+      "resource_id": "0cf93ad6a3d94a05384b87b0120d3020"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/policy.docx",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "content-length": "36857"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:17.431951+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/policy.docx",
+      "source_id": "8b3ebde5bc0640a3bc72440281fa7eda",
+      "content_hash": "27c4c47e37f36aebda8da45ce4a2211f7ae077d7b870d4e19614795d4c8050ac",
+      "size": 36857,
+      "path": "raw/8b3ebde5bc0640a3bc72440281fa7eda.bin",
+      "resource_id": "5aec219fe61cdd204187804f1f2477ed"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/scanned.pdf",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/pdf",
+        "content-length": "14038"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:17.438854+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/scanned.pdf",
+      "source_id": "c5d152758e87483eb1890a48a5414baa",
+      "content_hash": "1f701ee2e9e2cbb4d52e754210917d6162e2c6a085421ed256070d7d31982dcd",
+      "size": 14038,
+      "path": "raw/c5d152758e87483eb1890a48a5414baa.bin",
+      "resource_id": "73069766402357fa093fa76fba806bd1"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/mixed.pdf",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/pdf",
+        "content-length": "14127"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:18.427071+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/mixed.pdf",
+      "source_id": "230c2ed9322445c396dd38c00bacd688",
+      "content_hash": "ac86bdb42b42214f29609e670b01d38181645091c40cc2a9f73b21aaefcda885",
+      "size": 14127,
+      "path": "raw/230c2ed9322445c396dd38c00bacd688.bin",
+      "resource_id": "037f305c4efbcd734df4f5ca96610061"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/notice.png",
+      "http_status": 200,
+      "headers": {
+        "content-type": "image/png",
+        "content-length": "12356"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:18.433360+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/notice.png",
+      "source_id": "4267317abed24ee28cf1f04a775740ee",
+      "content_hash": "18f6b191952b38ba4ef58a414785785c745378ab51ebb4385902940c515e4479",
+      "size": 12356,
+      "path": "raw/4267317abed24ee28cf1f04a775740ee.bin",
+      "resource_id": "cf9ebf411971656c8f4b3a14c0408872"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/js",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "410"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:19.111363+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/js",
+      "source_id": "90d5689f94ca4c9c99dddd0f75333730",
+      "content_hash": "670a6ce3f2265444a6b09b58466d8001b4bc385d5f417151e206595fb9a96ebc",
+      "size": 410,
+      "path": "raw/90d5689f94ca4c9c99dddd0f75333730.bin",
+      "resource_id": "71755f0f320039416f3e086962876e29"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/short",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "22"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:19.153315+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/short",
+      "source_id": "b2f6753113b04c9ca0fb6c0948c7db51",
+      "content_hash": "f15c982d3c88d637ae0e3c71ad4945f9dbdfcb444288d4dcc1efe6e2e3dff3c3",
+      "size": 22,
+      "path": "raw/b2f6753113b04c9ca0fb6c0948c7db51.bin",
+      "resource_id": "96e5f6d088d16fd2853838ad3ce9fb0c"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/js",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "fetch_method": "browser",
+      "fetch_timestamp": "2026-09-19T12:04:20.507535+00:00",
+      "warnings": [
+        "browser_request_blocked: PolicyError: outside_fixture_origin"
+      ],
+      "requested_url": "http://127.0.0.1:62934/js",
+      "source_id": "ec0d1c1eb7c048fb975db2b4468db982",
+      "content_hash": "c3638cb3078e54798208c363c9b5c38966c0520fe475300a735b24ce70a87203",
+      "size": 508,
+      "path": "raw/ec0d1c1eb7c048fb975db2b4468db982.bin",
+      "resource_id": "71755f0f320039416f3e086962876e29"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/transient",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "35"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:22.058795+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/transient",
+      "source_id": "9d6b42861a9b4f06bb9e6886ff71d674",
+      "content_hash": "f63d0d4c3e302d524686cd774fdf679ec23846861eff78ddf3fb663633b91e9c",
+      "size": 35,
+      "path": "raw/9d6b42861a9b4f06bb9e6886ff71d674.bin",
+      "resource_id": "2498362683168c77f016355c520e91eb"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/failure",
+      "http_status": 503,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "11"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:22.073240+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/failure",
+      "source_id": "e68c803c6f5b4bf0b992f953cafc4233",
+      "content_hash": "ca184496974204a0bd3fd4925e0540bc4b0df6fcc232994d29754272b7183812",
+      "size": 11,
+      "path": "raw/e68c803c6f5b4bf0b992f953cafc4233.bin",
+      "resource_id": "02cfb85bc509bdfb27622c94ad2ad8b9"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/rate",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "34",
+        "retry-after": "0"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:22.688603+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/rate",
+      "source_id": "32e3bd3fd99148cc97d92fae779c652a",
+      "content_hash": "048c75fbbf50745a1f0b122bcabe0dca74dc0cbd414df96fba91c040434190a8",
+      "size": 34,
+      "path": "raw/32e3bd3fd99148cc97d92fae779c652a.bin",
+      "resource_id": "f9140810dfda81bf6b3102fbcac27203"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/old.doc",
+      "http_status": 200,
+      "headers": {
+        "content-type": "application/msword",
+        "content-length": "15"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:23.111302+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/old.doc",
+      "source_id": "bf918c102c754aa5bbd1e4ecccbe5e2d",
+      "content_hash": "e3de9f8e01c18569c7dbd3b7e1ae63d24bd9d2cad1246c2cea265acf77987d0c",
+      "size": 15,
+      "path": "raw/bf918c102c754aa5bbd1e4ecccbe5e2d.bin",
+      "resource_id": "3bf7cb15a30474587edc6d8f988693ec"
+    },
+    {
+      "final_url": "http://127.0.0.1:62934/rendered-only",
+      "http_status": 200,
+      "headers": {
+        "content-type": "text/html",
+        "content-length": "36"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:04:23.117722+00:00",
+      "warnings": [],
+      "requested_url": "http://127.0.0.1:62934/rendered-only",
+      "source_id": "5f5f31174289489ab9dff6d140c2e02a",
+      "content_hash": "897a769388475942ab90932f8c65c51a6a27f087d52cf8b8552ecbe5d4b56482",
+      "size": 36,
+      "path": "raw/5f5f31174289489ab9dff6d140c2e02a.bin",
+      "resource_id": "6f4fe8945e9e421ca21db8bdfc2869dc"
+    }
+  ],
+  "resources": [
+    {
+      "id": "ad6efa8f3258bdc76f7ea8ca00d0c03e",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/",
+      "parent": null,
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "b65436728519de2f295f64cf2c657095",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/service",
+      "parent": "http://127.0.0.1:62934/child.xml",
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "3449dcfc8d194e0683adcae4661c7eb9",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/?page=2",
+      "parent": "http://127.0.0.1:62934/child.xml",
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "0cf93ad6a3d94a05384b87b0120d3020",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/brochure.pdf",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "document",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "5aec219fe61cdd204187804f1f2477ed",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/policy.docx",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "document",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "73069766402357fa093fa76fba806bd1",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/scanned.pdf",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "document",
+      "state": "needs_review",
+      "reason": "image_table_relationships_unverified; ocr_requires_review"
+    },
+    {
+      "id": "037f305c4efbcd734df4f5ca96610061",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/mixed.pdf",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "document",
+      "state": "needs_review",
+      "reason": "image_table_relationships_unverified; ocr_requires_review"
+    },
+    {
+      "id": "cf9ebf411971656c8f4b3a14c0408872",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/notice.png",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "image",
+      "state": "needs_review",
+      "reason": "image_table_relationships_unverified; ocr_requires_review"
+    },
+    {
+      "id": "71755f0f320039416f3e086962876e29",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/js",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "needs_review",
+      "reason": "browser_request_blocked: PolicyError: outside_fixture_origin"
+    },
+    {
+      "id": "96e5f6d088d16fd2853838ad3ce9fb0c",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/short",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "2498362683168c77f016355c520e91eb",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/transient",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "02cfb85bc509bdfb27622c94ad2ad8b9",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/failure",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "failed",
+      "reason": "FetchError: http_503"
+    },
+    {
+      "id": "84df038a200af650aec791b4c3c5d24e",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/large",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "failed",
+      "reason": "download_size_limit"
+    },
+    {
+      "id": "0d489f114953fd6c18c2bfd22217a1b6",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/denied",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "robots_denied"
+    },
+    {
+      "id": "e24f3d84db8616b9361717a304f7430d",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/redirect-private",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "outside_fixture_origin"
+    },
+    {
+      "id": "f9140810dfda81bf6b3102fbcac27203",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/rate",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "3bf7cb15a30474587edc6d8f988693ec",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/old.doc",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "document",
+      "state": "needs_review",
+      "reason": "empty_content; unsupported_content_type"
+    },
+    {
+      "id": "c702550780ae2df7dc822d51667ff607",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "https://outside.invalid/",
+      "parent": "http://127.0.0.1:62934/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "outside_fixture_origin"
+    },
+    {
+      "id": "6f4fe8945e9e421ca21db8bdfc2869dc",
+      "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+      "url": "http://127.0.0.1:62934/rendered-only",
+      "parent": "http://127.0.0.1:62934/js",
+      "depth": 2,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    }
+  ]
+}

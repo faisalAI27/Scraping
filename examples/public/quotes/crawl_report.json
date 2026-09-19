@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "job_id": "d03ccc04473d46d9bf868b5cc6250b04",
+  "seed_url": "https://quotes.toscrape.com/js/",
+  "status": "partial",
+  "created": "2026-09-19T12:07:37.043062+00:00",
+  "finished": "2026-09-19T12:07:43.200294+00:00",
+  "elapsed_seconds": 6.156205292005325,
+  "termination_reason": "queue_exhausted",
+  "configuration": {
+    "allowed_domains": [],
+    "allowed_paths": [
+      "/"
+    ],
+    "external_document_domains": [],
+    "excluded_patterns": [
+      "[?&](?:sort|filter|calendar|sessionid)=",
+      "/calendar/"
+    ],
+    "max_resources": 1,
+    "max_discovered": 2000,
+    "max_depth": 0,
+    "concurrency": 2,
+    "timeout_seconds": 20.0,
+    "extraction_timeout_seconds": 120.0,
+    "retries": 1,
+    "max_duration_seconds": 60.0,
+    "per_host_delay": 1.0,
+    "max_download_bytes": 10000000,
+    "max_total_bytes": 100000000,
+    "max_sitemaps": 0,
+    "max_links_per_page": 1000,
+    "max_query_variants": 20,
+    "max_redirects": 5,
+    "render": "always",
+    "render_wait_ms": 1500,
+    "max_browser_requests": 60,
+    "max_browser_bytes": 20000000,
+    "browser_resource_domains": [],
+    "hash_routes": "flag",
+    "ocr_enabled": true,
+    "ocr_language": "eng",
+    "max_ocr_pages": 5,
+    "max_document_pages": 100,
+    "max_image_pixels": 20000000,
+    "ocr_timeout_seconds": 20.0,
+    "min_ocr_confidence": 60.0,
+    "min_image_width": 250,
+    "min_image_height": 100,
+    "include_images": false,
+    "manual_image_urls": [],
+    "remove_selectors": [],
+    "repetition_ratio": 0.6,
+    "user_agent": "SitePrep/0.1 (+local public information collection)"
+  },
+  "unique_discovered_resources": 6,
+  "outcomes": {
+    "extracted": 1,
+    "skipped": 5
+  },
+  "resource_kinds": {
+    "page": {
+      "extracted": 1,
+      "skipped": 5
+    },
+    "document": {},
+    "image": {}
+  },
+  "record_statuses": {
+    "ready": 1
+  },
+  "attempt_count": 5,
+  "attempt_methods": {
+    "robots": 1,
+    "http": 1,
+    "browser_http": 2,
+    "browser": 1
+  },
+  "transferred_bytes_recorded": 96168,
+  "raw_source_count": 3,
+  "raw_source_bytes": 15000,
+  "pending_urls": [],
+  "failures": [],
+  "skips": [
+    {
+      "url": "https://quotes.toscrape.com/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://quotes.toscrape.com/login",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://quotes.toscrape.com/js/page/2/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.goodreads.com/quotes",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.zyte.com/",
+      "reason": "out_of_scope_domain"
+    }
+  ],
+  "warnings": [
+    "depth_limit"
+  ],
+  "quality_flags": {},
+  "counting_definitions": {
+    "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+    "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+    "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+    "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+    "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+    "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+  }
+}

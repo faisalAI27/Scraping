@@ -1,0 +1,1055 @@
+{
+  "sources": [
+    {
+      "final_url": "https://www.python.org/robots.txt",
+      "http_status": 200,
+      "headers": {
+        "content-length": "537",
+        "content-type": "text/plain"
+      },
+      "fetch_method": "robots",
+      "fetch_timestamp": "2026-09-19T12:07:31.400878+00:00",
+      "warnings": [],
+      "body_representation": "response_body",
+      "role": "robots",
+      "requested_url": "https://www.python.org/robots.txt",
+      "source_id": "ac36b2f7aac94ea9b4b3e116fc935159",
+      "content_hash": "18cb4cd525df8528491845e76f3af26c29c6795d02ea8133974d3b341a2ddd9f",
+      "size": 537,
+      "path": "raw/ac36b2f7aac94ea9b4b3e116fc935159.bin",
+      "resource_id": null
+    },
+    {
+      "final_url": "https://www.python.org/about/",
+      "http_status": 200,
+      "headers": {
+        "content-length": "8945",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:07:31.991423+00:00",
+      "warnings": [],
+      "body_representation": "encoded_http_entity",
+      "requested_url": "https://www.python.org/about/",
+      "role": "encoded_transport",
+      "source_id": "96aa58c699b8432e8b16847c997394bf",
+      "content_hash": "fe5108d071e892ac0e97b4054da2daec334a38b2784ba2970087ffb98d7289d7",
+      "size": 8945,
+      "path": "raw/96aa58c699b8432e8b16847c997394bf.bin",
+      "resource_id": "7569184b9467ed89cabdb9007177fe15"
+    },
+    {
+      "final_url": "https://www.python.org/about/",
+      "http_status": 200,
+      "headers": {
+        "content-length": "8945",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=utf-8"
+      },
+      "fetch_method": "http",
+      "fetch_timestamp": "2026-09-19T12:07:31.991423+00:00",
+      "warnings": [],
+      "body_representation": "decoded_http_entity",
+      "requested_url": "https://www.python.org/about/",
+      "wire_source_id": "96aa58c699b8432e8b16847c997394bf",
+      "source_id": "617b70abec1e4af58ebcdf847abf12be",
+      "content_hash": "cf148dd65bd9d47d0b4938ff8d02d2cd88030fe2245cada28132b372ba20680f",
+      "size": 41837,
+      "path": "raw/617b70abec1e4af58ebcdf847abf12be.bin",
+      "resource_id": "7569184b9467ed89cabdb9007177fe15"
+    }
+  ],
+  "resources": [
+    {
+      "id": "7569184b9467ed89cabdb9007177fe15",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/",
+      "parent": null,
+      "depth": 0,
+      "kind": "page",
+      "state": "extracted",
+      "reason": null
+    },
+    {
+      "id": "cba98eeb291e71961a819946914ffc3e",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4efe931b2624784434accf50e33b0b89",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "94f9dbb50b6b8ecf120dce6ae8714920",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://docs.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "4d65c04afb697793086bf53aa6b14942",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pypi.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "029ae71f8b2630cd0df109e56291acd8",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/jobs/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e835aa4396949f8d948de56a52f64628",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3dab20b7befdb85fecb89665fba4ffe3",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://donate.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "2071bbe71e319e022bf4dfc30042e3e4",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.linkedin.com/company/python-software-foundation/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "0d0ec277818f1741681742bf6f52ef24",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://fosstodon.org/@ThePSF",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "d11a6991b2f6bc0d29409a9da40330ab",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/irc/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "fa9dc313b0212c56fafed7e1a761881b",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://twitter.com/ThePSF",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "476a88fe09fc5bd8b0886617aaaa20bb",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/apps/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "7a7fe190bf3e3a028fc1cf1c925a8934",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/quotes/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "ee9298208f16e9a8d720984232e487a2",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/gettingstarted/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a95176b3402b1985f90d4ac82a73c1a0",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/help/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "dbbf1adec1d0d5dd5aa57c686d0df3e8",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "154d967225211cec2151f8c2beedbc22",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/source/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "635f1296e0551892285f76bd275d2b86",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/windows/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "cb4e960070a1e5ea8f90d2446c29d347",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/macos/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2c81dffeebad3aadabce714cc48206f1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/android/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "977e8eb00bbee87e2860b849a354c974",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/downloads/ios/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "950b59c4825203e80b99fe5cd75691d8",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/download/other/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "65a74014037090e151bbb0f93e7df623",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://docs.python.org/3/license.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "5a8e4aa4a364192d714019298a80e1f9",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/download/alternatives",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2085cf4b607dd1088c806a1db4d56961",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/doc/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "4669285d400ac2b846054d33c9889602",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/doc/av",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d75bd22a63ca28907970892377c357f1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/BeginnersGuide",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "1680602ee5bf618b969527b7d7242211",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://docs.python.org/3/faq/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "24610db898dfc011b43c199d112d1833",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://translations.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "d0feff19c7751637f41fc09fd70e553a",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://peps.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "79503cf6436c3723b3d5025899c82b8f",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/PythonBooks",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "86136306b8dcf190896153f548b5b311",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/doc/essays/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "9667c860f7b680c12e7d1669113ad1ec",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/diversity/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "04fc1f72f85806a7d5082949c5b36f84",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/lists/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "04bac2c33241552f0e629189ac496f4e",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/forums/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "c8610cf1fae7ddbe502a2de78c62aba7",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/annual-report/2024/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "2453766ec60184530977df484955c8f0",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/workshops/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "254fc0d99e3a70d7ba0a735a7230d95f",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/sigs/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "1a3f38623691035d5ff00d1c5bd622b5",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/logos/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "11a803dcc2d74692495ec66441dbc829",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "36b39e0c5297d2ca658c39718a5513b4",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/conduct/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "d873083b765a584c22d77674f61c096e",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/awards",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f76d085e6ea86006c5d0c047f85d9d24",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/get-involved/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "311defaaebe752d1445281a92cf5c097",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/community-stories/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3228069d6ed02734da6b2b0fe30b8ef1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "94c3a3822aba7ccf05c79e281315fc3d",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/arts/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "67964f9d9408969106266a51d3b34bc3",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/business/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "338dc82772c1d5b2f6a97cb729966f9b",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/education/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "770faf552bb9d42a5bd7107377f0c7b6",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/engineering/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "139b5bbaed4dc845739d946643b7bc48",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/government/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f3dd2b59c4c00cc689c0598aab5cfb4f",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/scientific/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "9745a1d6a6baeb989b4dce04c719076c",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/success-stories/category/software-development/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3227fb8af1b293fc02f78005ea0e7c9d",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/blogs/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "0d82209583e6580c25582f83abd185d1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/newsletter/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "585c0aff2a8abf7a71fbcd7e5a07b1a1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "35c679c5aff9bd1501f0e5752e3c09f8",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pycon.blogspot.com/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "9edbc462f5f8d4ee35c6b11abde1b1ba",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://blog.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "1fd49bf9908db06e1951bf9d45907c33",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://planetpython.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "26f2d6a221b7dbddc42d1e61fbfce9b5",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b310ce039e12684867bc930bd39452d8",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-events/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "20f554a56da2767235be68afde5a2f5c",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-user-group/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "0575903ec064d9a855dd1c830d481dc3",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-events/past/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "fed4339bb6b64cc5e23cebd6909d70d1",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-user-group/past/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b4d6dc5b48750e9bc689facc787f27e5",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/PythonEventsCalendar",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "ada8207d702f590b22c742530d73b8b0",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Programmers",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "68973c718cc4d88663fea37648ae1e75",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/BeginnersGuide/NonProgrammers",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "606ac3e983f812b707db1f4e572a2334",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Download",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "6df08900fd502d1c5a1a4de42aebdc09",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Examples",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "6a7c446035c53cf9fedb80cd1c55abfc",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "http://docs.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "7268ab425c656118466b08d4f0e1c52d",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/community/lists",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "7d51261432b112d95cf9589d8edcc540",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pypi.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "2ff1c1c22d61b7c7741ee62631d92441",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "5a553b4e892e4e9882d2d4089c9a2052",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://docs.python.org/license.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "bc37a0a73f1f54b09e48a1a3423d5d7f",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://opensource.org/license/pythonsoftfoundation-php/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "01617b57d17ad3ac407e306965b7c15e",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf-landing/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "b11f7fa89cad1c3e7050fa61b21b5a85",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-2026-psf-board-election.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "e25680d54d3bc719bcb18d25552d8e34",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-2026-python-packaging.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "2af95335d28fd518c7813757bd5e99a2",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-psf-strategic-plan-2026.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "87e90b5b63c6f93fefa5b7c85edc23f6",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/2026/09/the-2026-psf-board-election-is-open.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "dd2cf2bc9142185a57ad5e2e003bbcdb",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://pyfound.blogspot.com/2026/09/inaugural-python-packaging-council.html",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "6593ec4cd3926a701425db2673bd0f52",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/calendars/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "de81f592091e466aab7ca98740c1f6e3",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-user-group/2208/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3f4fda495d83c363c3f04afb9f95d123",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-user-group/2182/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "7ce9595a1f5aca3a680ef7f0d5daeed3",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-events/2136/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "5f62262ebdab865fac4d588dffb92c19",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-events/2187/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "dfe9513b0f45ec50fa652825b7309d7f",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/events/python-events/2134/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "0a6399c540fd9e7f33d56cec184fb298",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/membership/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "99f64b8a39e5f9ec2f59c289460bf6ce",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/psf/donations/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "a1afa455a77ff0ad8dda70186d6cb8a0",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/dev/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "f5567369cd075e07361c377d23f90449",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://devguide.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "767ac354e9d8403066e8d6b65289e56b",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://github.com/python/cpython/issues",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "9d403a27300c115526167cf40e1c24ae",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://mail.python.org/mailman/listinfo/python-dev",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "c981821ad37866c08e7c22305cc3a220",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/dev/core-mentorship/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "3ce6cbc9c03b9b0204829f3f5ca2f277",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/dev/security/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "373feae28dcb0b4e6aa5523ee3240a79",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://github.com/python/pythondotorg/issues",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "7a1acbcc229159daed5500fdda121d4a",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://status.python.org/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "id": "2ca4aef871bf1ca75f8ba48324d372df",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://www.python.org/about/legal/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "depth_limit"
+    },
+    {
+      "id": "e1526ea55d9e629490968513d2ff9434",
+      "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+      "url": "https://policies.python.org/python.org/Privacy-Notice/",
+      "parent": "https://www.python.org/about/",
+      "depth": 1,
+      "kind": "page",
+      "state": "skipped",
+      "reason": "out_of_scope_domain"
+    }
+  ]
+}

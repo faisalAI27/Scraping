@@ -1,0 +1,21 @@
+<!doctype html><html><head><title>Harbor Services</title></head><body>
+<nav><a href="/service">Services</a><a href="/service?utm_source=nav">Services again</a></nav>
+<main><h1>Harbor Services</h1><p>Returns are not accepted after 30 days, except faulty items.</p>
+<p>Plan A costs $19.95 per month.</p><p>Plan B costs $29.95 per month.</p>
+<div class="service-card">Repairs available by appointment.</div>
+<h2>Specifications</h2><table><caption>Model specifications</caption>
+<thead><tr><th>Model</th><th>Capacity (kg)</th><th>Price</th></tr></thead>
+<tr><td>AB-100-X</td><td>25 kg</td><td>$199.00</td></tr></table>
+<h2>Questions</h2><details><summary>Are Sundays open?</summary><p>No, except emergency repairs.</p></details>
+<ol start="3"><li>Switch off power.</li><li>Do not remove the seal.</li></ol>
+<a href="/brochure.pdf">Brochure</a><a href="/policy.docx">Policy</a>
+<a href="/scanned.pdf">Scanned notice</a><a href="/mixed.pdf">Mixed PDF</a>
+<img src="/notice.png" alt="Public service hours notice" width="1100" height="220">
+<img src="/logo.png" alt="Logo" width="20" height="20">
+<a href="/js">Live availability</a><a href="/short">Short page</a><a href="/transient">Transient</a>
+<a href="/failure">Failure</a><a href="/large">Large</a><a href="/denied">Robots denied</a>
+<a href="/redirect-private">Bad redirect</a><a href="/rate">Rate limited</a>
+<a href="/old.doc">Old format</a><a href="https://outside.invalid/">Outside</a>
+<a href="/?page=2">Next page</a><a href="#questions">Same page</a></main>
+<div class="cookie-banner">Accept cookies to continue</div>
+<footer><address>Contact: info@harbor.example<br>Monday-Friday 09:00-17:00</address></footer></body></html>

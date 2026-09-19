@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "job_id": "1c3ceabde4424fe3adcfe737a427ff5d",
+  "seed_url": "http://127.0.0.1:62934/",
+  "status": "partial",
+  "created": "2026-09-19T12:04:16.129110+00:00",
+  "finished": "2026-09-19T12:04:23.614619+00:00",
+  "elapsed_seconds": 7.4837626249936875,
+  "termination_reason": "queue_exhausted",
+  "configuration": {
+    "allowed_domains": [],
+    "allowed_paths": [
+      "/"
+    ],
+    "external_document_domains": [],
+    "excluded_patterns": [
+      "[?&](?:sort|filter|calendar|sessionid)=",
+      "/calendar/"
+    ],
+    "max_resources": 40,
+    "max_discovered": 2000,
+    "max_depth": 3,
+    "concurrency": 2,
+    "timeout_seconds": 20.0,
+    "extraction_timeout_seconds": 120.0,
+    "retries": 1,
+    "max_duration_seconds": 120.0,
+    "per_host_delay": 0.0,
+    "max_download_bytes": 100000,
+    "max_total_bytes": 100000000,
+    "max_sitemaps": 20,
+    "max_links_per_page": 1000,
+    "max_query_variants": 20,
+    "max_redirects": 5,
+    "render": "auto",
+    "render_wait_ms": 500,
+    "max_browser_requests": 60,
+    "max_browser_bytes": 20000000,
+    "browser_resource_domains": [],
+    "hash_routes": "flag",
+    "ocr_enabled": true,
+    "ocr_language": "eng",
+    "max_ocr_pages": 5,
+    "max_document_pages": 100,
+    "max_image_pixels": 20000000,
+    "ocr_timeout_seconds": 20.0,
+    "min_ocr_confidence": 60.0,
+    "min_image_width": 250,
+    "min_image_height": 100,
+    "include_images": true,
+    "manual_image_urls": [],
+    "remove_selectors": [],
+    "repetition_ratio": 0.6,
+    "user_agent": "SitePrep/0.1 (+local public information collection)"
+  },
+  "unique_discovered_resources": 19,
+  "outcomes": {
+    "extracted": 9,
+    "needs_review": 5,
+    "failed": 2,
+    "skipped": 3
+  },
+  "resource_kinds": {
+    "page": {
+      "extracted": 7,
+      "needs_review": 1,
+      "failed": 2,
+      "skipped": 3
+    },
+    "document": {
+      "extracted": 2,
+      "needs_review": 3
+    },
+    "image": {
+      "needs_review": 1
+    }
+  },
+  "record_statuses": {
+    "ready": 9,
+    "needs_review": 4,
+    "unsupported": 1
+  },
+  "attempt_count": 26,
+  "attempt_methods": {
+    "robots": 1,
+    "sitemap": 2,
+    "http": 20,
+    "browser_http": 2,
+    "browser": 1
+  },
+  "transferred_bytes_recorded": 82137,
+  "raw_source_count": 19,
+  "raw_source_bytes": 82112,
+  "pending_urls": [],
+  "failures": [
+    {
+      "url": "http://127.0.0.1:62934/failure",
+      "reason": "FetchError: http_503"
+    },
+    {
+      "url": "http://127.0.0.1:62934/large",
+      "reason": "download_size_limit"
+    }
+  ],
+  "skips": [
+    {
+      "url": "http://127.0.0.1:62934/denied",
+      "reason": "robots_denied"
+    },
+    {
+      "url": "http://127.0.0.1:62934/redirect-private",
+      "reason": "outside_fixture_origin"
+    },
+    {
+      "url": "https://outside.invalid/",
+      "reason": "outside_fixture_origin"
+    }
+  ],
+  "warnings": [
+    "download_size_limit"
+  ],
+  "quality_flags": {
+    "image_table_relationships_unverified": 3,
+    "ocr_requires_review": 3,
+    "browser_request_blocked: PolicyError: outside_fixture_origin": 1,
+    "empty_content": 1,
+    "unsupported_content_type": 1
+  },
+  "counting_definitions": {
+    "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+    "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+    "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+    "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+    "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+    "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+  }
+}

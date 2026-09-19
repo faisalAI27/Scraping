@@ -1,0 +1,1029 @@
+{
+  "date": "2026-09-19T12:05:03.810369+00:00",
+  "results": [
+    {
+      "name": "python",
+      "url": "https://www.python.org/about/",
+      "sector": "software nonprofit",
+      "facts": [
+        "Python Software Foundation",
+        "OSI-approved open source license"
+      ],
+      "render": "auto",
+      "job_id": "8dbe88f6b58547879a31c58bc5acbffb",
+      "report": {
+        "schema_version": "1.0",
+        "job_id": "8dbe88f6b58547879a31c58bc5acbffb",
+        "seed_url": "https://www.python.org/about/",
+        "status": "partial",
+        "created": "2026-09-19T12:04:15.126890+00:00",
+        "finished": "2026-09-19T12:04:16.890080+00:00",
+        "elapsed_seconds": 1.7604098330048146,
+        "termination_reason": "queue_exhausted",
+        "configuration": {
+          "allowed_domains": [],
+          "allowed_paths": [
+            "/"
+          ],
+          "external_document_domains": [],
+          "excluded_patterns": [
+            "[?&](?:sort|filter|calendar|sessionid)=",
+            "/calendar/"
+          ],
+          "max_resources": 1,
+          "max_discovered": 2000,
+          "max_depth": 0,
+          "concurrency": 2,
+          "timeout_seconds": 20.0,
+          "extraction_timeout_seconds": 120.0,
+          "retries": 1,
+          "max_duration_seconds": 60.0,
+          "per_host_delay": 1.0,
+          "max_download_bytes": 10000000,
+          "max_total_bytes": 100000000,
+          "max_sitemaps": 0,
+          "max_links_per_page": 1000,
+          "max_query_variants": 20,
+          "max_redirects": 5,
+          "render": "auto",
+          "render_wait_ms": 1500,
+          "max_browser_requests": 60,
+          "max_browser_bytes": 20000000,
+          "browser_resource_domains": [],
+          "hash_routes": "flag",
+          "ocr_enabled": true,
+          "ocr_language": "eng",
+          "max_ocr_pages": 5,
+          "max_document_pages": 100,
+          "max_image_pixels": 20000000,
+          "ocr_timeout_seconds": 20.0,
+          "min_ocr_confidence": 60.0,
+          "min_image_width": 250,
+          "min_image_height": 100,
+          "include_images": false,
+          "manual_image_urls": [],
+          "remove_selectors": [],
+          "repetition_ratio": 0.6,
+          "user_agent": "SitePrep/0.1 (+local public information collection)"
+        },
+        "unique_discovered_resources": 1,
+        "outcomes": {
+          "failed": 1
+        },
+        "resource_kinds": {
+          "page": {
+            "failed": 1
+          },
+          "document": {},
+          "image": {}
+        },
+        "record_statuses": {},
+        "attempt_count": 2,
+        "attempt_methods": {
+          "robots": 1,
+          "http": 1
+        },
+        "transferred_bytes_recorded": 537,
+        "raw_source_count": 1,
+        "raw_source_bytes": 537,
+        "pending_urls": [],
+        "failures": [
+          {
+            "url": "https://www.python.org/about/",
+            "reason": "FetchError: unexpected_content_encoding"
+          }
+        ],
+        "skips": [],
+        "warnings": [],
+        "quality_flags": {},
+        "counting_definitions": {
+          "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+          "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+          "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+          "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+          "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+          "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+        }
+      },
+      "fact_preservation": {
+        "expected_fact_count": 2,
+        "preserved_fact_count": 0,
+        "checks": [
+          {
+            "expected": "Python Software Foundation",
+            "present_exactly": false
+          },
+          {
+            "expected": "OSI-approved open source license",
+            "present_exactly": false
+          }
+        ],
+        "documents": []
+      }
+    },
+    {
+      "name": "books",
+      "url": "https://books.toscrape.com/",
+      "sector": "retail demonstration sandbox",
+      "facts": [
+        "Tipping the Velvet",
+        "£53.74",
+        "£51.77",
+        "In stock"
+      ],
+      "render": "auto",
+      "job_id": "f514df878c2d4e7fbe6f4ee8019ab6cd",
+      "report": {
+        "schema_version": "1.0",
+        "job_id": "f514df878c2d4e7fbe6f4ee8019ab6cd",
+        "seed_url": "https://books.toscrape.com/",
+        "status": "partial",
+        "created": "2026-09-19T12:04:17.118551+00:00",
+        "finished": "2026-09-19T12:04:32.229679+00:00",
+        "elapsed_seconds": 15.110191999992821,
+        "termination_reason": "queue_exhausted",
+        "configuration": {
+          "allowed_domains": [],
+          "allowed_paths": [
+            "/"
+          ],
+          "external_document_domains": [],
+          "excluded_patterns": [
+            "[?&](?:sort|filter|calendar|sessionid)=",
+            "/calendar/"
+          ],
+          "max_resources": 1,
+          "max_discovered": 2000,
+          "max_depth": 0,
+          "concurrency": 2,
+          "timeout_seconds": 20.0,
+          "extraction_timeout_seconds": 120.0,
+          "retries": 1,
+          "max_duration_seconds": 60.0,
+          "per_host_delay": 1.0,
+          "max_download_bytes": 10000000,
+          "max_total_bytes": 100000000,
+          "max_sitemaps": 0,
+          "max_links_per_page": 1000,
+          "max_query_variants": 20,
+          "max_redirects": 5,
+          "render": "auto",
+          "render_wait_ms": 1500,
+          "max_browser_requests": 60,
+          "max_browser_bytes": 20000000,
+          "browser_resource_domains": [],
+          "hash_routes": "flag",
+          "ocr_enabled": true,
+          "ocr_language": "eng",
+          "max_ocr_pages": 5,
+          "max_document_pages": 100,
+          "max_image_pixels": 20000000,
+          "ocr_timeout_seconds": 20.0,
+          "min_ocr_confidence": 60.0,
+          "min_image_width": 250,
+          "min_image_height": 100,
+          "include_images": false,
+          "manual_image_urls": [],
+          "remove_selectors": [],
+          "repetition_ratio": 0.6,
+          "user_agent": "SitePrep/0.1 (+local public information collection)"
+        },
+        "unique_discovered_resources": 74,
+        "outcomes": {
+          "extracted": 1,
+          "skipped": 73
+        },
+        "resource_kinds": {
+          "page": {
+            "extracted": 1,
+            "skipped": 73
+          },
+          "document": {},
+          "image": {}
+        },
+        "record_statuses": {
+          "ready": 1
+        },
+        "attempt_count": 2,
+        "attempt_methods": {
+          "robots": 1,
+          "http": 1
+        },
+        "transferred_bytes_recorded": 51447,
+        "raw_source_count": 2,
+        "raw_source_bytes": 51447,
+        "pending_urls": [],
+        "failures": [],
+        "skips": [
+          {
+            "url": "https://books.toscrape.com/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books_1/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/music_14/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/default_15/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/science_22/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/art_25/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/history_32/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/business_35/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/health_47/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/soumission_998/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/set-me-free_988/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/olio_984/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://books.toscrape.com/catalogue/page-2.html",
+            "reason": "depth_limit"
+          }
+        ],
+        "warnings": [
+          "depth_limit"
+        ],
+        "quality_flags": {},
+        "counting_definitions": {
+          "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+          "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+          "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+          "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+          "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+          "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+        }
+      },
+      "fact_preservation": {
+        "expected_fact_count": 4,
+        "preserved_fact_count": 4,
+        "checks": [
+          {
+            "expected": "Tipping the Velvet",
+            "present_exactly": true
+          },
+          {
+            "expected": "£53.74",
+            "present_exactly": true
+          },
+          {
+            "expected": "£51.77",
+            "present_exactly": true
+          },
+          {
+            "expected": "In stock",
+            "present_exactly": true
+          }
+        ],
+        "documents": [
+          {
+            "url": "https://books.toscrape.com/",
+            "status": "ready",
+            "flags": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "government",
+      "url": "https://www.gov.uk/bank-holidays",
+      "sector": "public information",
+      "facts": [
+        "Christmas Day",
+        "Boxing Day (substitute day)",
+        "Your employer does not have to give you"
+      ],
+      "render": "auto",
+      "job_id": "02283556ac6d4da683b3c236b5fd260f",
+      "report": {
+        "schema_version": "1.0",
+        "job_id": "02283556ac6d4da683b3c236b5fd260f",
+        "seed_url": "https://www.gov.uk/bank-holidays",
+        "status": "partial",
+        "created": "2026-09-19T12:04:33.184805+00:00",
+        "finished": "2026-09-19T12:04:39.340122+00:00",
+        "elapsed_seconds": 6.149490042007528,
+        "termination_reason": "queue_exhausted",
+        "configuration": {
+          "allowed_domains": [],
+          "allowed_paths": [
+            "/"
+          ],
+          "external_document_domains": [],
+          "excluded_patterns": [
+            "[?&](?:sort|filter|calendar|sessionid)=",
+            "/calendar/"
+          ],
+          "max_resources": 1,
+          "max_discovered": 2000,
+          "max_depth": 0,
+          "concurrency": 2,
+          "timeout_seconds": 20.0,
+          "extraction_timeout_seconds": 120.0,
+          "retries": 1,
+          "max_duration_seconds": 60.0,
+          "per_host_delay": 1.0,
+          "max_download_bytes": 10000000,
+          "max_total_bytes": 100000000,
+          "max_sitemaps": 0,
+          "max_links_per_page": 1000,
+          "max_query_variants": 20,
+          "max_redirects": 5,
+          "render": "auto",
+          "render_wait_ms": 1500,
+          "max_browser_requests": 60,
+          "max_browser_bytes": 20000000,
+          "browser_resource_domains": [],
+          "hash_routes": "flag",
+          "ocr_enabled": true,
+          "ocr_language": "eng",
+          "max_ocr_pages": 5,
+          "max_document_pages": 100,
+          "max_image_pixels": 20000000,
+          "ocr_timeout_seconds": 20.0,
+          "min_ocr_confidence": 60.0,
+          "min_image_width": 250,
+          "min_image_height": 100,
+          "include_images": false,
+          "manual_image_urls": [],
+          "remove_selectors": [],
+          "repetition_ratio": 0.6,
+          "user_agent": "SitePrep/0.1 (+local public information collection)"
+        },
+        "unique_discovered_resources": 48,
+        "outcomes": {
+          "extracted": 1,
+          "skipped": 47
+        },
+        "resource_kinds": {
+          "page": {
+            "extracted": 1,
+            "skipped": 47
+          },
+          "document": {},
+          "image": {}
+        },
+        "record_statuses": {
+          "ready": 1
+        },
+        "attempt_count": 2,
+        "attempt_methods": {
+          "robots": 1,
+          "http": 1
+        },
+        "transferred_bytes_recorded": 177001,
+        "raw_source_count": 2,
+        "raw_source_bytes": 177001,
+        "pending_urls": [],
+        "failures": [],
+        "skips": [
+          {
+            "url": "https://www.gov.uk/help/cookies",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/benefits",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/births-deaths-marriages",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/business",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/childcare-parenting",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/citizenship",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/justice",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/disabilities",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/driving",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/education",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/employing-people",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/environment-countryside",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/housing-local-services",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/tax",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/abroad",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/visas-immigration",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/working",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/government/organisations",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search/news-and-communications",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search/guidance-and-regulation",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search/research-and-statistics",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search/transparency-and-freedom-of-information-releases",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/search",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/browse/working/time-off",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/holiday-entitlement-rights",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/how-to-have-your-benefits-paid",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/gwyliau-banc",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/bank-holidays/england-and-wales.ics",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/bank-holidays/scotland.ics",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/bank-holidays/northern-ireland.ics",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/school-term-holiday-dates",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/contact/govuk",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=no-js",
+            "reason": "out_of_scope_domain"
+          },
+          {
+            "url": "https://www.gov.uk/government/how-government-works",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/government/get-involved",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/help",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/help/privacy-notice",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/help/accessibility-statement",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/contact",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/help/terms-conditions",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/cymraeg",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.gov.uk/government/organisations/government-digital-service",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+            "reason": "out_of_scope_domain"
+          },
+          {
+            "url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+            "reason": "out_of_scope_domain"
+          }
+        ],
+        "warnings": [
+          "depth_limit"
+        ],
+        "quality_flags": {},
+        "counting_definitions": {
+          "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+          "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+          "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+          "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+          "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+          "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+        }
+      },
+      "fact_preservation": {
+        "expected_fact_count": 3,
+        "preserved_fact_count": 3,
+        "checks": [
+          {
+            "expected": "Christmas Day",
+            "present_exactly": true
+          },
+          {
+            "expected": "Boxing Day (substitute day)",
+            "present_exactly": true
+          },
+          {
+            "expected": "Your employer does not have to give you",
+            "present_exactly": true
+          }
+        ],
+        "documents": [
+          {
+            "url": "https://www.gov.uk/bank-holidays",
+            "status": "ready",
+            "flags": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "quotes",
+      "url": "https://quotes.toscrape.com/js/",
+      "sector": "JavaScript demonstration sandbox",
+      "facts": [
+        "Albert Einstein",
+        "Jane Austen"
+      ],
+      "render": "always",
+      "job_id": "ae0c2c6a66ee4db9afcd33efb3ce6485",
+      "report": {
+        "schema_version": "1.0",
+        "job_id": "ae0c2c6a66ee4db9afcd33efb3ce6485",
+        "seed_url": "https://quotes.toscrape.com/js/",
+        "status": "partial",
+        "created": "2026-09-19T12:04:39.570615+00:00",
+        "finished": "2026-09-19T12:05:03.804273+00:00",
+        "elapsed_seconds": 24.219891125001595,
+        "termination_reason": "queue_exhausted",
+        "configuration": {
+          "allowed_domains": [],
+          "allowed_paths": [
+            "/"
+          ],
+          "external_document_domains": [],
+          "excluded_patterns": [
+            "[?&](?:sort|filter|calendar|sessionid)=",
+            "/calendar/"
+          ],
+          "max_resources": 1,
+          "max_discovered": 2000,
+          "max_depth": 0,
+          "concurrency": 2,
+          "timeout_seconds": 20.0,
+          "extraction_timeout_seconds": 120.0,
+          "retries": 1,
+          "max_duration_seconds": 60.0,
+          "per_host_delay": 1.0,
+          "max_download_bytes": 10000000,
+          "max_total_bytes": 100000000,
+          "max_sitemaps": 0,
+          "max_links_per_page": 1000,
+          "max_query_variants": 20,
+          "max_redirects": 5,
+          "render": "always",
+          "render_wait_ms": 1500,
+          "max_browser_requests": 60,
+          "max_browser_bytes": 20000000,
+          "browser_resource_domains": [],
+          "hash_routes": "flag",
+          "ocr_enabled": true,
+          "ocr_language": "eng",
+          "max_ocr_pages": 5,
+          "max_document_pages": 100,
+          "max_image_pixels": 20000000,
+          "ocr_timeout_seconds": 20.0,
+          "min_ocr_confidence": 60.0,
+          "min_image_width": 250,
+          "min_image_height": 100,
+          "include_images": false,
+          "manual_image_urls": [],
+          "remove_selectors": [],
+          "repetition_ratio": 0.6,
+          "user_agent": "SitePrep/0.1 (+local public information collection)"
+        },
+        "unique_discovered_resources": 6,
+        "outcomes": {
+          "needs_review": 1,
+          "skipped": 5
+        },
+        "resource_kinds": {
+          "page": {
+            "needs_review": 1,
+            "skipped": 5
+          },
+          "document": {},
+          "image": {}
+        },
+        "record_statuses": {
+          "needs_review": 1
+        },
+        "attempt_count": 6,
+        "attempt_methods": {
+          "robots": 1,
+          "http": 1,
+          "browser_http": 4
+        },
+        "transferred_bytes_recorded": 223470,
+        "raw_source_count": 2,
+        "raw_source_bytes": 6015,
+        "pending_urls": [],
+        "failures": [],
+        "skips": [
+          {
+            "url": "https://quotes.toscrape.com/",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://quotes.toscrape.com/login",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://quotes.toscrape.com/js/page/2/",
+            "reason": "depth_limit"
+          },
+          {
+            "url": "https://www.goodreads.com/quotes",
+            "reason": "out_of_scope_domain"
+          },
+          {
+            "url": "https://www.zyte.com/",
+            "reason": "out_of_scope_domain"
+          }
+        ],
+        "warnings": [
+          "depth_limit"
+        ],
+        "quality_flags": {
+          "render_failed:TimeoutError:": 1
+        },
+        "counting_definitions": {
+          "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+          "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+          "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+          "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+          "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+          "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+        }
+      },
+      "fact_preservation": {
+        "expected_fact_count": 2,
+        "preserved_fact_count": 0,
+        "checks": [
+          {
+            "expected": "Albert Einstein",
+            "present_exactly": false
+          },
+          {
+            "expected": "Jane Austen",
+            "present_exactly": false
+          }
+        ],
+        "documents": [
+          {
+            "url": "https://quotes.toscrape.com/js/",
+            "status": "needs_review",
+            "flags": [
+              "render_failed:TimeoutError:"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

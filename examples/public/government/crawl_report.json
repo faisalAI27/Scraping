@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0",
+  "job_id": "36e6142b376c44fdb9adce2a52003dad",
+  "seed_url": "https://www.gov.uk/bank-holidays",
+  "status": "partial",
+  "created": "2026-09-19T12:07:35.249767+00:00",
+  "finished": "2026-09-19T12:07:37.032404+00:00",
+  "elapsed_seconds": 1.7769424169964623,
+  "termination_reason": "queue_exhausted",
+  "configuration": {
+    "allowed_domains": [],
+    "allowed_paths": [
+      "/"
+    ],
+    "external_document_domains": [],
+    "excluded_patterns": [
+      "[?&](?:sort|filter|calendar|sessionid)=",
+      "/calendar/"
+    ],
+    "max_resources": 1,
+    "max_discovered": 2000,
+    "max_depth": 0,
+    "concurrency": 2,
+    "timeout_seconds": 20.0,
+    "extraction_timeout_seconds": 120.0,
+    "retries": 1,
+    "max_duration_seconds": 60.0,
+    "per_host_delay": 1.0,
+    "max_download_bytes": 10000000,
+    "max_total_bytes": 100000000,
+    "max_sitemaps": 0,
+    "max_links_per_page": 1000,
+    "max_query_variants": 20,
+    "max_redirects": 5,
+    "render": "auto",
+    "render_wait_ms": 1500,
+    "max_browser_requests": 60,
+    "max_browser_bytes": 20000000,
+    "browser_resource_domains": [],
+    "hash_routes": "flag",
+    "ocr_enabled": true,
+    "ocr_language": "eng",
+    "max_ocr_pages": 5,
+    "max_document_pages": 100,
+    "max_image_pixels": 20000000,
+    "ocr_timeout_seconds": 20.0,
+    "min_ocr_confidence": 60.0,
+    "min_image_width": 250,
+    "min_image_height": 100,
+    "include_images": false,
+    "manual_image_urls": [],
+    "remove_selectors": [],
+    "repetition_ratio": 0.6,
+    "user_agent": "SitePrep/0.1 (+local public information collection)"
+  },
+  "unique_discovered_resources": 48,
+  "outcomes": {
+    "extracted": 1,
+    "skipped": 47
+  },
+  "resource_kinds": {
+    "page": {
+      "extracted": 1,
+      "skipped": 47
+    },
+    "document": {},
+    "image": {}
+  },
+  "record_statuses": {
+    "ready": 1
+  },
+  "attempt_count": 2,
+  "attempt_methods": {
+    "robots": 1,
+    "http": 1
+  },
+  "transferred_bytes_recorded": 177001,
+  "raw_source_count": 2,
+  "raw_source_bytes": 177001,
+  "pending_urls": [],
+  "failures": [],
+  "skips": [
+    {
+      "url": "https://www.gov.uk/help/cookies",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/benefits",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/births-deaths-marriages",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/business",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/childcare-parenting",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/citizenship",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/justice",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/disabilities",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/driving",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/education",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/employing-people",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/environment-countryside",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/housing-local-services",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/tax",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/abroad",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/visas-immigration",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/working",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/government/organisations",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search/news-and-communications",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search/guidance-and-regulation",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search/research-and-statistics",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search/policy-papers-and-consultations",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search/transparency-and-freedom-of-information-releases",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/search",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/browse/working/time-off",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/holiday-entitlement-rights",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/how-to-have-your-benefits-paid",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/gwyliau-banc",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/bank-holidays/england-and-wales.ics",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/bank-holidays/scotland.ics",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/bank-holidays/northern-ireland.ics",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/school-term-holiday-dates",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/contact/govuk",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=no-js",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.gov.uk/government/how-government-works",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/government/get-involved",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/help",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/help/privacy-notice",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/help/accessibility-statement",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/contact",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/help/terms-conditions",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/cymraeg",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.gov.uk/government/organisations/government-digital-service",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/",
+      "reason": "out_of_scope_domain"
+    }
+  ],
+  "warnings": [
+    "depth_limit"
+  ],
+  "quality_flags": {},
+  "counting_definitions": {
+    "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+    "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+    "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+    "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+    "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+    "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+  }
+}

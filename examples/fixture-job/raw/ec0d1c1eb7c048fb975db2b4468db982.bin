@@ -1,0 +1,5 @@
+<html><head></head><body><main id="app"><h1>Availability</h1><p>Appointments available Tuesday.</p><a href="/rendered-only">Details</a></main><script>
+                fetch('/api/message').then(r=>r.json()).then(d=>document.getElementById('app').innerHTML='<h1>Availability</h1><p>'+d.text+'</p><a href="/rendered-only">Details</a>');
+                fetch('http://127.0.0.1:1/private');
+                fetch('/post-target', {method:'POST',body:'should be blocked'});
+                </script></body></html>

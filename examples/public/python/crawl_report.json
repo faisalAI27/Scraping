@@ -1,0 +1,488 @@
+{
+  "schema_version": "1.0",
+  "job_id": "d84b99dff8e54909ad50e0cd7c3853da",
+  "seed_url": "https://www.python.org/about/",
+  "status": "partial",
+  "created": "2026-09-19T12:07:30.795536+00:00",
+  "finished": "2026-09-19T12:07:32.552093+00:00",
+  "elapsed_seconds": 1.7542173330002697,
+  "termination_reason": "queue_exhausted",
+  "configuration": {
+    "allowed_domains": [],
+    "allowed_paths": [
+      "/"
+    ],
+    "external_document_domains": [],
+    "excluded_patterns": [
+      "[?&](?:sort|filter|calendar|sessionid)=",
+      "/calendar/"
+    ],
+    "max_resources": 1,
+    "max_discovered": 2000,
+    "max_depth": 0,
+    "concurrency": 2,
+    "timeout_seconds": 20.0,
+    "extraction_timeout_seconds": 120.0,
+    "retries": 1,
+    "max_duration_seconds": 60.0,
+    "per_host_delay": 1.0,
+    "max_download_bytes": 10000000,
+    "max_total_bytes": 100000000,
+    "max_sitemaps": 0,
+    "max_links_per_page": 1000,
+    "max_query_variants": 20,
+    "max_redirects": 5,
+    "render": "auto",
+    "render_wait_ms": 1500,
+    "max_browser_requests": 60,
+    "max_browser_bytes": 20000000,
+    "browser_resource_domains": [],
+    "hash_routes": "flag",
+    "ocr_enabled": true,
+    "ocr_language": "eng",
+    "max_ocr_pages": 5,
+    "max_document_pages": 100,
+    "max_image_pixels": 20000000,
+    "ocr_timeout_seconds": 20.0,
+    "min_ocr_confidence": 60.0,
+    "min_image_width": 250,
+    "min_image_height": 100,
+    "include_images": false,
+    "manual_image_urls": [],
+    "remove_selectors": [],
+    "repetition_ratio": 0.6,
+    "user_agent": "SitePrep/0.1 (+local public information collection)"
+  },
+  "unique_discovered_resources": 99,
+  "outcomes": {
+    "extracted": 1,
+    "skipped": 98
+  },
+  "resource_kinds": {
+    "page": {
+      "extracted": 1,
+      "skipped": 98
+    },
+    "document": {},
+    "image": {}
+  },
+  "record_statuses": {
+    "ready": 1
+  },
+  "attempt_count": 2,
+  "attempt_methods": {
+    "robots": 1,
+    "http": 1
+  },
+  "transferred_bytes_recorded": 9482,
+  "raw_source_count": 3,
+  "raw_source_bytes": 51319,
+  "pending_urls": [],
+  "failures": [],
+  "skips": [
+    {
+      "url": "https://www.python.org/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://docs.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pypi.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/jobs/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://donate.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.linkedin.com/company/python-software-foundation/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://fosstodon.org/@ThePSF",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/community/irc/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://twitter.com/ThePSF",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/about/apps/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/about/quotes/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/about/gettingstarted/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/about/help/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/source/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/windows/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/macos/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/android/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/downloads/ios/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/download/other/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://docs.python.org/3/license.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/download/alternatives",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/doc/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/doc/av",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://wiki.python.org/moin/BeginnersGuide",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://docs.python.org/3/faq/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://translations.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://peps.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://wiki.python.org/moin/PythonBooks",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/doc/essays/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/diversity/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/lists/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/forums/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/annual-report/2024/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/workshops/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/sigs/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/logos/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://wiki.python.org/moin/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/psf/conduct/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/community/awards",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/get-involved/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/community-stories/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/arts/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/business/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/education/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/engineering/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/government/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/scientific/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/success-stories/category/software-development/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/blogs/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/newsletter/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pycon.blogspot.com/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://blog.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://planetpython.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/events/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-events/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-user-group/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-events/past/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-user-group/past/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://wiki.python.org/moin/PythonEventsCalendar",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Programmers",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://wiki.python.org/moin/BeginnersGuide/NonProgrammers",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Download",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://wiki.python.org/moin/BeginnersGuide/Examples",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "http://docs.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/community/lists",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://pypi.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/psf",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://docs.python.org/license.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://opensource.org/license/pythonsoftfoundation-php/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/psf-landing/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-2026-psf-board-election.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-2026-python-packaging.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/2026/09/announcing-psf-strategic-plan-2026.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/2026/09/the-2026-psf-board-election-is-open.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://pyfound.blogspot.com/2026/09/inaugural-python-packaging-council.html",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/events/calendars/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-user-group/2208/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-user-group/2182/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-events/2136/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-events/2187/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/events/python-events/2134/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/membership/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/psf/donations/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/dev/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://devguide.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://github.com/python/cpython/issues",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://mail.python.org/mailman/listinfo/python-dev",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/dev/core-mentorship/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://www.python.org/dev/security/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://github.com/python/pythondotorg/issues",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://status.python.org/",
+      "reason": "out_of_scope_domain"
+    },
+    {
+      "url": "https://www.python.org/about/legal/",
+      "reason": "depth_limit"
+    },
+    {
+      "url": "https://policies.python.org/python.org/Privacy-Notice/",
+      "reason": "out_of_scope_domain"
+    }
+  ],
+  "warnings": [
+    "depth_limit"
+  ],
+  "quality_flags": {},
+  "counting_definitions": {
+    "unique_discovered_resources": "Distinct normalized content URLs admitted to the bounded manifest, including skipped URLs. Robots/sitemaps are control sources, not content resources.",
+    "resource_kinds": "Discovery classification (page/document/image); detected MIME is recorded on documents. Extensionless document links may initially be classified as pages.",
+    "attempt_count": "Every HTTP transfer (including control requests, redirects, browser subrequests and retries), plus each successful rendering operation. Pre-network policy rejections are skips, not transfers.",
+    "transferred_bytes_recorded": "Body bytes retained by transfer attempts; aborted/oversize chunks may not be included. Render snapshots are excluded to avoid counting them as network bytes.",
+    "completed": "Queue exhausted within configured scope without recorded warnings/failures/review results; never proof of website completeness.",
+    "pending_urls": "Admitted resources not finished when execution stopped. Links beyond discovery caps are represented by warnings, not enumerated."
+  }
+}

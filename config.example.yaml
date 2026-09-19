@@ -1,0 +1,15 @@
+# Conservative resource controls; these do not establish completeness.
+max_resources: 50
+max_depth: 3
+concurrency: 2
+per_host_delay: 1.0
+max_duration_seconds: 300
+max_download_bytes: 10000000
+max_total_bytes: 100000000
+allowed_domains: []  # Empty means the seed hostname only; no implicit subdomains.
+allowed_paths: [/]
+external_document_domains: []
+render: auto
+include_images: true
+ocr_enabled: true
+max_ocr_pages: 5
